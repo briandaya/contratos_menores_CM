@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Datos de Contratos Menores Comunidad de Madrid">
+  <meta name="author" content="Brianda Yáñez">
+
+  <title>Contratos Menores de la Comunidad de Madrid</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+  <!-- Font Awsome -->
+  <script src="https://kit.fontawesome.com/f015c8a4c1.js" crossorigin="anonymous"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  
+  <!-- Custom styles for this project -->
+  <link href="css/menores.css" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1F7664DL26"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1F7664DL26');
+</script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Contratos Menores - Comunidad de Madrid</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#info">¿Qué son?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#map-sanidad">Algunos datos en mapa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#top-ten-hospitales">Top Ten Hospitales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#mas-datos">Más datos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-dark text-white">
+    <div class="container text-center">
+      <h1>Contratos Menores en la Comunidad de Madrid</h1>
+      <p class="lead medium">Proyectos de Ciencia de Datos aplicada a la fiscalización de la Contratación Pública</p>
+      <p class="lead medium">2.537.206 contratos, de 2016 a 2020</p>
+    </div>
+  </header>
+
+  <section id="info">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>¿Qué son los Contratos Menores?</h2>
+          <p class="lead medium">Los contratos menores son un procedimiento de adjudicación de contratos de carácter excepcional, con los que se evita la publicidad para una currencia mínima, un considerable volumen de trámites y una fiscalización previa. </p>
+          <p class="lead medium">Los contratos menores tienen varias limitaciones:</p>
+          <ul>
+            <li>No pueden tener una duración superior a un año, ni se pueden prorrogar superando un año.</li>
+            <li>No se pueden utilizar para la contratación de servicios necesarios, reiterados y previsibles.</li>
+            <li>Los importes máximos de los contratos son de 15.000 € para servicios y suministros, o 40.000 € para obras.</li>
+          </ul>
+          <br>
+          <p class="lead medium">He descargado los datos de 2.537.206 de contratos menores de la Comunidad de Madrid, de 2016 a 2020, y se puede hacer muchas cosas con ellos. Sigue leyendo...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="map-sanidad" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Contratos menores 2020 en Sanidad</h2>
+          <img src="https://briandaya.github.io/contratos_menores_CM/docs/graphs/Consejeria_de_Sanidad-2020.png" class="rounded float-left left" alt="Consejería de Sanidad. 2020. 93% superan los límites">
+          <p class="lead medium">En el mapa que se muestra a continuación se localizan las entidades dependientes de la Consejería de Sanidad. Haciendo clic en cada una aparece el volúmen total adjudicado a contratos menores acumulados en 2020 mismo proveedor, que superan los límites de gasto establecidos. Estos contratos son sospechosos de incurrir en un fraccionamiento irregular de la contratación. Aunque desde 2020 no se exige expresamente comporbar previavente que no se van a superar los límites, siguen sujetos a la misma limitación de no utilizarse para fraccionar contratos.</p>
+          <p class="lead medium">Los casos más llamativos se encuentran en la Consejería de Sanidad, en concreto en los Hospitales. Por ejemplo el Hospital Universitario Doce de Octubre durante el año 2020 suma más de 90 millones de euros en contratos menores que superan los límites, casi el 97% de todos sus contratos menores.</p>
+          <p class="lead title-little">&nbsp;&nbsp;MAPA DE ENTIDADES DEPENDIENTES DE LA CONSEJERÍA DE SANIDAD. <br> &nbsp;&nbsp;Volumen total adjudicado en contratos menores, que agrupado por proveedor supera los límites en el año 2020.</p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://briandaya.github.io/contratos_menores_CM/docs/Consejeria_de_Sanidad-map-2020.html" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="top-ten-hospitales" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Hospitales con mayor acumulación de Contratos Menores. Años 2016 a 2020</h2>
+          <p class="lead medium">Casi todos los hospitales de la Comunidad de Madrid superan los límites legales de gasto cuando nos fijamos en el importe adjudicado que acumula cada proveedor. Aquí se muestran los 10 hospitales que más gasto realizan con esta anomalía.</p>
+          <p class="lead small">En la esquina inferior derecha puede ampliar a pantalla completa.</p>
+
+          <p class="lead title-little">&nbsp;&nbsp;TOP TEN HOSPITALES. <br> &nbsp;&nbsp;Volumen total adjudicado en contratos menores, que agrupado por proveedor supera los límites por año.</p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://datastudio.google.com/embed/reporting/b2650372-99f3-4a90-9eb0-199a22888005/page/KRYGC" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mas-datos" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Próximamente...</h2><br>
+          <p class="lead cita">Vinculando dos de mis pasiones: #Transparencia y #Datos</p>
+          <p class="lead">
+            Cada paso en este es un trabajo muy laborioso, y de momento lo realizo en el poco tiempo libre del que dispongo así que voy despacio, pero iré realizando nuevos desarrollos. Si veo interés podría pensar en buscar financiación para acelerar los proyectos, así que si te parece interesante comparte, comenta, sígueme, contacta... :)</p>
+          <ul>
+            <li>Muchas más visualizaciones interactivas de datos y estadísticas.</li>
+            <li>Descarga de datasets.</li>
+            <li>Publicación del código fuente.</li>
+            <li>Detalles de los contratos.</li>
+            <li>Cruce de datos con otras fuentes de datos, para:
+              <ul>
+                <li>Identificación y análisis de coincidencias en los objetos de los contratos para localización de fragmentación indebida de contratos.</li>
+                <li>Identificación y análisis de coincidencias entre contratos de distintos años que también corresponderían a fragmentaciones indebidas por duración de los contratos.</li>
+                <li>Identificación y análisis de licitaciones públicas con objetos de contrato similares para comparar los costes.</li>
+                <li>Obtener información de las empresas adjudicatarias, personas socias o administradoras.</li>
+                <li>Obtener información de las personas responsables políticas de los contratos.</li>
+                <li>Identificación de relaciones entre las personas de .</li>
+              </ul>  
+            </li>
+            <li>Y lo que vaya surgiendo...</li>
+        </ul>
+        <p class="lead">Brianda Yáñez.</p>
+        <ul class="social-network social-circle">
+          <li><a href="https://twitter.com/briandaya" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/briandayanez/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">
+        <a href="https://creativecommons.org/licenses/by/4.0/deed.es" style="color: whitesmoke;">
+          Contratos Menores - Comunidad de Madrid
+        </a>
+        , por &nbsp;
+        <a href="https://twitter.com/briandaya" style="color: whitesmoke;">
+          <i class="fab fa-twitter fa-lg"></i>@briandaya</a>&nbsp;|&nbsp;
+        <a href="https://www.linkedin.com/in/briandayanez/" style="color: whitesmoke;">
+          Brianda Yáñez&nbsp;<i class="fab fa-linkedin fa-lg"></i></a>
+         &nbsp; tiene licencia
+        <a href="https://creativecommons.org/licenses/by/4.0/deed.es" style="color: whitesmoke;">
+          CC BY 4.0
+          <i class="fab fa-creative-commons fa-lg"></i>
+          <i class="fab fa-creative-commons-by fa-lg"></i>
+        </a>
+      </p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
