@@ -18,9 +18,13 @@ $.fn.jQuerySimpleCounter = function( options ) {
 		step: function() {
 			var mathCount = Math.ceil(this.count);
 			thisElement.text(numberWithDots(mathCount));
-		},
+        },
 		complete: settings.complete
 	});
+    setTimeout(function(){
+        thisElement.text(numberWithDots(2537206));
+    }, 3200);
 };
 
-$('#counter1').jQuerySimpleCounter({end: 2537206,duration: 5000});
+
+$('#counter1').jQuerySimpleCounter({end: 2537206,duration: 3000});
