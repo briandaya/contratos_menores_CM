@@ -133,12 +133,13 @@
   <section id="tabla-global" class="bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <h2>Datos anuales por entidad y proveedor</h2>
-          <p class="lead medium">En la siguiente tabla podemos visualizar el gasto anual acumulado para cada proveedor que han realizado las distintas entidades. En concreto por defecto se muestran las dependientes de la 'Consejería de Sanidad', principalmente los hospitales, ya que como puede apreciarse superan los límites de forma muy llamativa.</p>
+        <div class="col-lg-8 mx-auto">
+          <h2>Visión general - Datos anuales por entidad y proveedor</h2>
+          <p class="lead medium">En la siguiente tabla se puede visualizar el gasto anual acumulado para cada proveedor que han realizado las distintas entidades. En concreto por defecto se muestran las dependientes de la 'Consejería de Sanidad', principalmente los hospitales, ya que como puede apreciarse superan los límites de forma muy llamativa.</p>
           <p class="lead medium">La vista por defecto es de círculos, que facilita una visión general del exceso acumulado, pero puede cambiarse la vista a "Valores" para ver directamente las cifras. Se trata de un gran volumen de datos, por lo que puede tardar un poco en aplicarse los filtros. Se puede visualizar a pantalla completa con el icono de la parte inferior derecha de la tabla.</p>
-
-          <div class="embed-responsive embed-responsive-16by9">
+        </div>
+        <div class="col-lg-12 mx-auto">
+          <div class="embed-responsive">
             <div class='tableauPlaceholder' id='viz1620338740973' style='position: relative'>
               <noscript>
                 <a href='https:&#47;&#47;contratos-menores.es'>
@@ -167,11 +168,11 @@
               var vizElement = divElement.getElementsByTagName('object')[0];                    
               if ( divElement.offsetWidth > 800 ) { 
                 vizElement.style.width='100%';
-                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                vizElement.style.height=(divElement.offsetWidth*0.8)+'px';
                 } 
               else if ( divElement.offsetWidth > 500 ) { 
                 vizElement.style.width='100%';
-                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                vizElement.style.height=(divElement.offsetWidth*0.8)+'px';
                 } 
               else { 
                 vizElement.style.width='100%';
