@@ -1,0 +1,405 @@
+body {
+  background: #eee;
+  font-family: 'Montserrat', 'Encode Sans', sans-serif;
+}
+
+#title-navbar {
+  font-size: 18px;
+}
+
+@media (min-width: 600px) {
+  #title-navbar {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 410px) {
+  #title-navbar {
+    font-size: 16px;
+  }
+}
+
+.header-dark .navbar .navbar-brand {
+  font-weight: normal;
+  color: inherit;
+}
+
+.features-clean {
+  color: #ffffff;
+  background-color: #343a39;
+  padding-bottom: 30px;
+}
+
+.features-clean p {
+  color: #c6cdd1;
+}
+
+.features-clean .item .icon {
+  font-size: 24px;
+  color: #77b3ea;
+  float: left;
+  margin-left: -40px;
+}
+
+.footer-basic-dark {
+  padding: 20px 0;
+  color: #f0f9ff;
+  background-color: #343a39;
+  text-align: center;
+}
+
+.footer-basic-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic-dark .item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-basic-dark .copyright {
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  opacity: 0.75;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-basic-dark .copyright > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic-dark .copyright a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-basic-dark .copyright .cc-icons {
+  font-size: 15px;
+}
+
+.header-dark {
+  padding-bottom: 0px;
+  background-color: #343a39;
+}
+
+@media (min-width:768px) {
+  .header-dark {
+    /*margin-bottom: 60px;*/
+  }
+}
+
+#logo-header {
+  width: 140px;
+}
+
+@media (max-width: 415px) {
+  #title-header {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 415px) {
+  .header-dark .hero {
+    margin-top: 30px;
+  }
+}
+
+#ncontracts {
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-style: normal;
+}
+
+#sub-title-header {
+  color: #ffffff;
+  /*padding-top: 10px;*/
+  /*padding-bottom: 10px;*/
+  font-style: italic;
+  text-align: center;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.sub-title-header {
+  color: #ffffff;
+  /*padding-top: 10px;*/
+  /*padding-bottom: 10px;*/
+  font-style: italic;
+  text-align: center;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+@media (min-width:768px) {
+  .header-dark .hero h1 {
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-size: 36px;
+  }
+}
+
+.hr-header {
+  color: white;
+  height: 2px;
+}
+
+.counter-header {
+  font-weight: bolder;
+  font-size: 2rem;
+  font-family: monospace;
+  text-align: center;
+  color: white;
+  /*padding-top: 10px;*/
+  /*padding-bottom: 10px;*/
+}
+
+#title-header {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: #FFF;
+}
+
+.projects-horizontal .item .description {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.projects-horizontal .item .name {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: inherit;
+}
+
+.navbar-nav.ml-auto {
+  margin-left: auto!important;
+}
+
+@media (max-width: 480px) {
+  .projects-horizontal .col-sm-6.item {
+    border-bottom: 1px solid var(--bs-gray-400);
+  }
+}
+
+#intro-light {
+  font-family: 'Montserrat';
+  font-style: oblique;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+@media (min-width:768px) {
+  #intro-light {
+    margin-bottom: 40px;
+  }
+}
+
+#intro-about {
+  font-family: 'Montserrat';
+  font-style: oblique;
+  font-size: 14px;
+  background: #343a39;
+}
+
+.article-clean {
+  font-family: 'Montserrat';
+  color: #56585b;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.article-clean h1 {
+  font-weight: 600;
+}
+
+.list-group.list-group-horizontal-md {
+  margin-bottom: 20px;
+}
+
+.list-icon {
+  font-size: 18px;
+  color: red;
+}
+
+#form-mecenas {
+  font-size: small;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#form-mecenas .form-select, .form-control {
+  font-size: small;
+  padding: 6px;
+}
+
+.field_error {
+  color: var(--bs-red);
+  font-weight: 600;
+}
+
+#consent:checked, #consent2:checked {
+  background-color: var(--bs-success);
+  border-color: var(--bs-success);
+  border-width: thin;
+}
+
+#consent {
+  background-color: initial;
+  border-color: var(--bs-danger);
+  border-width: medium;
+}
+
+#consent2 {
+  background-color: initial;
+  border-color: var(--bs-danger);
+  border-width: thin;
+}
+
+@media (min-width:768px) {
+  .header-dark .hero {
+    margin-top: 0px;
+  }
+}
+
+.header-dark .hero {
+  margin-top: 0px;
+}
+
+.navigation-clean-search {
+  background: #343a39;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--bs-success);
+}
+
+.features-clean .item .name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+.features-clean .item .description {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.features-clean .item {
+  min-height: 100px;
+  padding-left: 55px;
+  margin-bottom: 20px;
+}
+
+.article-clean.tratamiento-datos p {
+  font-size: 12px;
+}
+
+.projects-horizontal {
+  /*margin-top: -60px;*/
+  color: #313437;
+  background-color: #fff;
+}
+
+#intro-contratos {
+  font-size: 16px;
+  max-width: 500px;
+  padding-top: 20px;
+  margin: 0px auto 10px;
+}
+
+.projects-horizontal .projects {
+  padding-bottom: 40px;
+}
+
+.projects-horizontal .item {
+  padding-top: 60px;
+  min-height: 160px;
+}
+
+.projects-horizontal p {
+  color: #7d8285;
+}
+
+.features-clean .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 60px;
+}
+
+.features-clean h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+.article-clean .intro {
+  font-size: 16px;
+  margin: 0 auto 30px;
+}
+
+.article-clean .intro h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  line-height: 1.5;
+  color: inherit;
+  margin-top: 20px;
+}
+
+.article-clean .intro p {
+  color: #929292;
+  font-size: 12px;
+}
+
+.article-clean .intro p .by {
+  font-style: italic;
+}
+
+.article-clean .intro p a {
+  color: #333;
+  text-transform: uppercase;
+  padding-left: 3px;
+}
+
+.article-clean .intro p .date {
+  text-transform: uppercase;
+  padding: 4px 0 4px 10px;
+  margin-left: 10px;
+  border-left: 1px solid #ddd;
+}
+
+@media (min-width:768px) {
+  .article-clean .text p {
+    font-size: 16px;
+  }
+}
+
+.article-clean .text p {
+  margin-bottom: 20px;
+  line-height: 1.45;
+}
+
+.article-clean .text figure {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+

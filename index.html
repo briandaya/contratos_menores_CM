@@ -1,285 +1,423 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-es">
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Primary Meta tags -->
-  <title>2.537.206 Contratos Menores de la Comunidad de Madrid</title>
-  <meta name="description" content="Más de 2.5 millones de Contratos Menores Comunidad de Madrid a análisis. Un observatorio en construcción de transparencia y fiscalización del gasto público a través de la Ciencia de Datos.">
-  <meta name="author" content="Brianda Yáñez">
-
-  <!-- og Meta tags -->
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="2.5 millones de contratos-menores.es" />
-  <meta property="og:description" content="Más de 2.5 millones de Contratos Menores Comunidad de Madrid a análisis. Un observatorio en  construcción de transparencia y fiscalización del gasto público a través de la Ciencia de Datos." />
-  <meta property="og:url" content="https://contratos-menores.es/" />
-  <meta property="og:site_name" content="contratos-menores.es" />
-  <meta property="og:image" name="image" content="https://contratos-menores.es/img/contratos-menores-cm.png">
-  <meta property="article:published_time" content="2021-05-01" />
-  <meta property="article:modified_time" content="2021-05-01" />
-  <meta property="article:author" content="Brianda Yáñez" />
-  <meta property="article:author" content="Brianda Yáñez" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>2.537.206 Contratos Menores de la Comunidad de Madrid</title>
+    <meta name="description" content="Más de 2.5 millones de Contratos Menores Comunidad de Madrid a análisis. Transparencia y fiscalización del gasto público a través de la Ciencia de Datos.">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.0/dist/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Encode+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,500,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tabulator-tables@4.9.3/dist/css/tabulator.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/timeline.css">
+<!-- og Meta tags -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="2.537.206 Contratos Menores de la Comunidad de Madrid" />
+    <meta property="og:description" content="Más de 2.5 millones de Contratos Menores Comunidad de Madrid a análisis. Transparencia y fiscalización del gasto público a través de la Ciencia de Datos." />
+    <meta property="og:url" content="https://contratos-menores.es/" />
+    <meta property="og:site_name" content="contratos-menores.es" />
+    <meta property="og:image" name="image" content="assets/img/contratos-menores-cm.png">
+    <meta property="article:published_time" content="2021-05-01" />
+    <meta property="article:modified_time" content="2021-05-01" />
+    <meta property="article:author" content="Brianda Yáñez" />
   
 
-  <!-- Twitter Meta tags -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:site" content="@briandaya">
-  <meta property="twitter:creator" content="@briandaya">
-  <meta property="twitter:title" content="2.5 millones de contratos-menores.es">
-  <meta property="twitter:description" content="Más de 2.5 millones de Contratos Menores Comunidad de Madrid a análisis. Una herramienta  en construcción de transparencia y fiscalización del gasto público a través de la Ciencia de Datos.">
-  <meta property="twitter:image" content="https://contratos-menores.es/img/contratos-menores-cm.png">
-  <meta property="twitter:image:alt" content="Herramienta de transparencia y análisis avanzado de Contratos Menores. Ciencia de datos aplicada al control del gasto público.">
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:site" content="@briandaya">
-  <meta property="twitter:creator" content="@briandaya">
-  <meta property="twitter:title" content="contratos-menores.es">
-  <meta property="twitter:description" content="Más de 2 millones y medio de Contratos Menores Comunidad de Madrid a análisis. Un observatorio  en construcción de transparencia y fiscalización del gasto público a través de la Ciencia de Datos.">
-
-  <!-- Favicon -->
-  <link rel="icon" href="img/favicon.png" type="image/x-icon">   
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> 
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-
-  <!-- Font Awsome -->
-  <script src="https://kit.fontawesome.com/f015c8a4c1.js" crossorigin="anonymous"></script>
-
-  <!-- Custom styles for this template -->
-  <link href="css/scrolling-nav.css" rel="stylesheet">
-  
-  <!-- Custom styles for this project -->
-  <link href="css/menores.css" rel="stylesheet">
-
-
+    <!-- Twitter Meta tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@briandaya">
+    <meta property="twitter:creator" content="@briandaya">
+    <meta property="twitter:title" content="2.5 millones de contratos-menores.es">
+    <meta property="twitter:description" content="2.537.206 Contratos Menores de Comunidad de Madrid. #Transparencia y fiscalización del gasto público a través de la Ciencia de #Datos #BigData">
+    <meta property="twitter:image" content="assets/img/contratos-menores-cm.png">
+    <meta property="twitter:image:alt" content="Herramienta de transparencia y análisis avanzado de Contratos Menores. Ciencia de datos aplicada al control del gasto público.">
 </head>
 
-<body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Contratos Menores - Comunidad de Madrid</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#info">¿Qué son?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#tabla-global">Visión general</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#map-sanidad">Algunos datos en mapa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#mas-datos">Más datos</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="bg-dark text-white">
-    <div class="container text-center">
-      <h1>Contratos Menores en la Comunidad de Madrid</h1>
-      <p class="lead medium cita">Herramienta de transparencia y análisis avanzado de Contratos Menores. Ciencia de datos aplicada al control del gasto público.</p>
-      <hr color="white">
-      <p class="lead medium">Contratos Menores obtenidos de 2016 a 2020:</p>
-      <img src="img/logo.png" alt="Logo contratos-menores.es" width="150px">
-      <p class="lead medium" id="counterX" class="number">2.537.206</p>
-      <hr color="white">
-    </div>
-  </header>
-
-  <section id="info">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>¿Qué son los Contratos Menores?</h2>
-          <p class="lead medium">Los contratos menores son un procedimiento de adjudicación de contratos de las Administraciones Públicas de carácter excepcional, para cubrir pequeñas necesidades puntuales, con los que se evita la publicidad previa para una currencia mínima, un considerable volumen de trámites y una fiscalización previa. </p>
-          <p class="lead medium">Dada su excepcionalidad, y para prevenir el abuso de esta fórmula, los contratos menores tienen varias limitaciones:</p>
-          <ul>
-            <li>No pueden tener una duración superior a un año, ni se pueden prorrogar superando un año.</li>
-            <li>No se pueden utilizar para la contratación de servicios necesarios, reiterados y previsibles.</li>
-            <li>Los importes máximos de los contratos son de 15.000 € para servicios y suministros, o 40.000 € para obras.</li>
-          </ul>
-          <br>
-          <p class="lead medium">He descargado los datos de 2.537.206 de contratos menores de la Comunidad de Madrid, de 2016 a 2020, y se puede hacer muchas cosas con ellos. Sigue leyendo...</p>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg sticky-top navigation-clean-search">
+        <div class="container"><a href="/"><img src="assets/img/logo1.png" style="width: 60px;"></a><a class="navbar-brand" id="title-navbar" href="/"><strong>&nbsp; contratos-menores.es</strong></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/#trabajos-realizados">Descubre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#sobre-este-proyecto">Sobre este proyecto</a></li>
+                    <li class="nav-item"><a class="btn btn-success text-center border rounded shadow" role="button" data-bs-toggle="modal" data-bss-tooltip="" data-bss-hover-animate="flash" title="Amadrina / apadrina el proyecto" style="font-size: 14px;font-weight: bold;" href="#modal-colabora" data-bs-target="#modal-colabora">COLABORA</a></li>
+                    <li class="nav-item dropdown d-none"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Descubre</a>
+                        <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="agregados-entidad-proveedor.html" target="_parent">Vista general por entidad y proveedor</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="tabla-global" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Visión general - Datos anuales por entidad y proveedor</h2>
-          <p class="lead medium">En la siguiente tabla se puede visualizar el gasto anual acumulado para cada proveedor que han realizado las distintas entidades. En concreto por defecto se muestran las dependientes de la 'Consejería de Sanidad', principalmente los hospitales, ya que como puede apreciarse superan los límites de forma muy llamativa.</p>
-          <p class="lead medium">Se puede alternar la vista entre valores y círculos, que facilita una visión general del exceso acumulado. Se trata de un gran volumen de datos, por lo que puede tardar un poco en aplicarse los filtros. Se puede visualizar a pantalla completa con el icono de la parte inferior derecha de la tabla.</p>
+    </nav>
+    <header class="header-dark">
+        <div class="container hero">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h1 class="text-center" id="title-header">Transparencia y Análisis de Datos:<br>Contratos Menores - Comunidad de Madrid.</h1>
+                    <p class="sub-title-header"><em>Herramienta de transparencia y análisis avanzado de datos. </em><br><em>Ciencia de datos aplicada al control del gasto público.</em><br></p>
+                    <hr class="hr-header">
+                    <p class="sub-title-header" style="font-weight: 800;"><strong><em>Contratos obtenidos de 2016 a 2020:</em></strong><br></p>
+                    <p style="text-align: center;"><img id="logo-header" src="assets/img/logo1.png" style="width: 100px;"></p>
+                    <p class="counter-header"><strong>2.537.206</strong><br></p>
+                    <hr class="hr-header">
+                </div>
+            </div>
         </div>
-        <div class="col-lg-12 mx-auto">
-          <div class="embed-responsive">
-            <div class='tableauPlaceholder' id='viz1620338740973' style='position: relative'>
-              <noscript>
-                <a href='https:&#47;&#47;contratos-menores.es'>
-                  <img alt='DBacumulados_niv1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;ContratosmenoresComunidaddeMadrid-Acumuladosqueexcedenloslmitesdegasto&#47;DBacumulados_niv1&#47;1_rss.png' style='border: none' />
-                </a>
-              </noscript>
-              <object class='tableauViz'  style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                <param name='embed_code_version' value='3' /> 
-                <param name='site_root' value='' />
-                <param name='name' value='ContratosmenoresComunidaddeMadrid-Acumuladosqueexcedenloslmitesdegasto&#47;DBacumulados_niv1' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;ContratosmenoresComunidaddeMadrid-Acumuladosqueexcedenloslmitesdegasto&#47;DBacumulados_niv1&#47;1.png' /> 
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='es' />
-                <param name='filter' value='publish=yes' />
-              </object>
-            </div>                
-            <script type='text/javascript'>                    
-              var divElement = document.getElementById('viz1620338740973');                    
-              var vizElement = divElement.getElementsByTagName('object')[0];                    
-              if ( divElement.offsetWidth > 800 ) { 
-                vizElement.style.width='100%';
-                vizElement.style.height=(divElement.offsetWidth*0.76)+'px';
-                } 
-              else if ( divElement.offsetWidth > 500 ) { 
-                vizElement.style.width='100%';
-                vizElement.style.height=(divElement.offsetWidth*0.76)+'px';
-                } 
-              else { 
-                vizElement.style.width='100%';
-                vizElement.style.height='827px';
-                }                     
-              var scriptElement = document.createElement('script');                    
-              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-              vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-            </script>
-          </div>
+    </header>
+    <div style="padding-top: 20px;padding-bottom: 20px;">
+        <div class="row row-cols-1 justify-content-center align-items-center">
+            <div class="col text-center"><button class="btn btn-success btn-lg text-center border rounded shadow" data-bs-toggle="modal" data-bss-tooltip="" data-bss-hover-animate="flash" type="button" title="Amadrina / apadrina el proyecto" style="font-size: 18px;font-weight: bold;" data-bs-target="#modal-colabora">COLABORA</button></div>
         </div>
-      </div>
     </div>
-  </section>
-
-  <section id="map-sanidad" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Contratos menores 2020 en Sanidad</h2>
-          <img src="https://briandaya.github.io/contratos_menores_CM/docs/graphs/Consejeria_de_Sanidad-2020.png" class="rounded float-left left" alt="Consejería de Sanidad. 2020. 93% superan los límites">
-          <p class="lead medium">En el mapa que se muestra a continuación se localizan las entidades dependientes de la Consejería de Sanidad. Haciendo clic en cada una aparece el volúmen total adjudicado a contratos menores acumulados en 2020 mismo proveedor, que superan los límites de gasto establecidos. Estas cifras anómalas pueden hacer sospechar la existencia de un fraccionamiento de contratos que deberían haberse licitado por otros procedimientos. Aunque desde 2020 no se exige expresamente comprobar previavente que no se van a superar los límites, siguen sujetos a la misma limitación de no ser reiterados ni previsibles.</p>
-          <p class="lead medium">Los casos más llamativos se encuentran en la Consejería de Sanidad, en concreto en los Hospitales. Por ejemplo el Hospital Universitario Doce de Octubre durante el año 2020 suma más de 90 millones de euros en contratos menores que superan los límites, casi el 97% de todos sus contratos menores.</p>
-          <p class="lead title-little">&nbsp;&nbsp;MAPA DE ENTIDADES DEPENDIENTES DE LA CONSEJERÍA DE SANIDAD. <br> &nbsp;&nbsp;Volumen total adjudicado en contratos menores, que agrupado por proveedor supera los límites en el año 2020.</p>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://briandaya.github.io/contratos_menores_CM/docs/Consejeria_de_Sanidad-map-2020.html" allowfullscreen></iframe>
-          </div>
+    <section id="trabajos-realizados" class="projects-horizontal">
+        <div class="container">
+            <div id="intro-contratos" class="intro" style="max-width: 80%;">
+                <figure class="text-center bg-light shadow">
+                    <blockquote class="blockquote">
+                        <p class="bg-white" id="intro-light"><br><em>Desde 2016 las Administraciones Públicas tienen el deber de publicar trimestralmente al menos un listado de los Contratos Menores que realizan. Esta información es poco accesible, con muchos errores, y en un volumen tan grande que resulta muy difícil de analizar.&nbsp;Dedicando mucho tiempo he descargado y depurado los más de 2 millones y medio de Contratos Menores de la Comunidad de Madrid publicados de 2016 a 2020. En esta página iré publicando los análisis y herramientas sobre estos datos.</em><br></p>
+                    </blockquote>
+                </figure>
+            </div>
+            <div class="row projects">
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="que-son.html"><img class="img-fluid" src="assets/img/boe-LCSP.png"></a></div>
+                        <div class="col">
+                            <h3 class="name">¿Qué son los Contratos Menores?</h3>
+                            <p class="description">Son un procedimiento de adjudicación de contratos de carácter excepcional para cubrir pequeñas necesidades puntuales, pero que elude la publicidad, la concurrencia y la transparencia.&nbsp;<a href="que-son.html">Abrir&nbsp;<i class="fas fa-external-link-alt"></i></a><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="agregados-entidad-proveedor.html"><img class="img-fluid" src="assets/img/agregados1.png"></a></div>
+                        <div class="col">
+                            <h3 class="name">Contratos menores acumulados cada año por empresa y entidad adjudicataria</h3>
+                            <p class="description">Tabla interactiva con los importes acumulados cada año en cada entidad para cada proveedor. Cuando la cifra acumulada supera los límites del contrato menor es la primera alerta para profundizar en su análisis.&nbsp;<a href="agregados-entidad-proveedor.html">Abrir&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="mapa-sanidad.html"><img class="img-fluid" src="assets/img/mapa1.png"></a></div>
+                        <div class="col">
+                            <h3 class="name">La Sanidad madrileña sobre el mapa</h3>
+                            <p class="description">Mapa interactivo de las entidades de la Consejería de Sanidad, principalmente hospitales, con el importe total acumulado de contratos menores cuando con el mismo proveedor se superan los límites de un contrato menor (Año 2020)&nbsp;<a href="mapa-sanidad.html">Abrir&nbsp;<i class="fas fa-external-link-alt"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="assets/img/busqueda.png"></a></div>
+                        <div class="col">
+                            <h3 class="name">Buscador de contratos</h3>
+                            <p class="description">Búsqueda de contratos por cualquier concepto, con detalles e información estadística y relacionada de interés (contratos similares, detalle de la empresa, etc).<br><strong>PRÓXIMAMENTE</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-colabora">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: #343a39;color: #ffffff;">
+                <div class="modal-header">
+                    <h4 class="modal-title">COLABORA CON EL PROYECTO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: #ffffff;"></button>
+                </div>
+                <div class="modal-body">
+                    <p>El proyecto podrá seguir adelante con tu apoyo.<br>Próximamente se habilitará un sistema de mecenazgo, sígueme en redes sociales.</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cerrar</button></div>
+            </div>
+        </div>
     </div>
-  </section>
-
-  <section id="mas-datos" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Próximamente...</h2><br>
-          <p class="lead cita">Vinculando dos de mis pasiones: #Transparencia y #Datos <br><br>
-            <img src="https://briandaya.github.io/contratos_menores_CM/docs/graphs/Consejeria_de_Sanidad-2020-top-ten-adj.png" class="rounded" alt="Consejería de Sanidad. 2020. 10 proveedores con más volumen de adjudicaciones de contratos menores">
-          </p>
-          
-          <p class="lead">
-            Hasta ahora se trataba de un pequeño proyecto para experimentar técnicas de ciencia de datos en tiempo libre, pero con un impulso económico para poder dedicarle tiempo puede convertirse en una herramienta de gran utilidad para la fiscalización social de nuestras instituciones, especialmente como fuente de información para medios de comunicación, agentes de verificación y asociaciones, entidades o colectivos interesados en la transparencia institucional</p>
-          <p class="lead">
-            En las próximas semanas se estudiará la viabilidad del proyecto con un sistema de mecenazgo, si estás interesada en el proyecto o tienes cualquier propuesta, pregunta o sugerencia no dudes en contactar :)</p>
-          <p class="lead">
-            Propuesta de valor:</p>
-          <ul>
-            <li>Información organizada, accesible, fácil de interpretar, con datos contextualizados.</li>
-            <li>Visulización gráfica interactiva de la información.</li>
-            <li>Estadísticas sobre entidades, empresas, cosejerías, tipos de contrato, etc.</li>
-            <li>Ficha detallada los contratos con información relacionada (p. ej. otros contratos similares, información de la empresa, etc.)</li>
-            <li>Escalable a otras Comunidades Autónomas y Administraciones Públicas.</li>
-            <li>Análisis avanzados:
-              <ul>
-                <li>Identificación y análisis de grupos de contratos por similitud del objeto, evaluando la posibilidad de fragmentación indebida.</li>
-                <li>Identificación y análisis objetos de contratos reiterados en el tiempo, evaluando la posibilidad de fragmentación indebida.</li>
-                <li>Identificación y análisis de otras licitaciones públicas con procedimientos ordinarios con objetos de contrato similares para comparar los costes.</li>
-              </ul>  
-            </li>
-            <li>Obtención de datos de otras fuentes para:
-              <ul>
-                <li>Obtener información de las empresas adjudicatarias, personas socias o administradoras.</li>
-                <li>Obtener información de las personas responsables políticas de los contratos.</li>
-                <li>Identificación de relaciones entre las personas que puedan sugerir conflicto de intereses.</li>
-                <li>Análisis avanzados combinando la información de empresas y responsables con los datos de los contratos.</li>
-              </ul>  
-            </li>
-            <li>Posibilidad de realizar proyectos derivados, de análisis concretos más exhaustivos.</li>
-            <li>Descarga de datasets.</li>
-            <li>API de acceso a datos.</li>
-            <li>Publicación del código fuente.</li>
-        </ul>
-        <br>
-        <ul class="social-network social-circle">
-          <li>Brianda Yáñez</li>
-          <li><a href="https://twitter.com/briandaya" class="icoTwitter" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/briandayanez/" class="icoLinkedin" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-      </div>
-      </div>
+    <section class="features-clean" style="padding-bottom: 1px;">
+        <div class="container">
+            <div class="intro" style="max-width: 80%;">
+                <h2 class="text-center" id="sobre-este-proyecto">Sobre este proyecto</h2>
+                <p class="text-center"><strong>#Transparencia &amp; #Datos</strong><br></p>
+                <figure class="text-center bg-light shadow" style="background: #343a40;">
+                    <blockquote class="blockquote">
+                        <p class="border-white shadow mb-0" id="intro-about"><br><em>Hasta ahora este era un pequeño proyecto para experimentar técnicas de Ciencia de Datos y mantener mi pasión por la Transparencia. Tras los primeros análisis he descubierto el enorme potencial que tiene. Con un impulso económico para poder dedicarle más tiempo puede convertirse en una herramienta de gran utilidad para la fiscalización social de nuestras instituciones, especialmente como fuente de información para medios de comunicación, agentes de verificación y asociaciones, entidades o colectivos interesados en la transparencia institucional.&nbsp;Sigue leyendo para ver las características&nbsp;&nbsp;y alcance del proyecto.&nbsp;Si te interesa el proyecto y tienes cualquier propuesta, pregunta o sugerencia no dudes en contactar.</em><br><br></p>
+                    </blockquote>
+                </figure>
+                <div>
+                    <p class="text-center">Puedes contribuir con el proyecto haciendo una aportación aquí:<br></p>
+                    <div class="row row-cols-1 justify-content-center align-items-center">
+                        <div class="col text-center"><button class="btn btn-success btn-lg text-center border rounded shadow" data-bs-toggle="modal" data-bss-tooltip="" data-bss-hover-animate="flash" type="button" title="Amadrina / apadrina el proyecto" style="font-size: 18px;font-weight: bold;" data-bs-target="#modal-colabora">COLABORA</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="caracteristicas" class="features-clean">
+        <div class="container">
+            <div class="row row-cols-1 justify-content-center align-items-center">
+                <div class="col">
+                    <hr>
+                </div>
+                <div class="col" style="margin-bottom: 30px;">
+                    <h3 class="text-center">Objetivos Generales<br></h3>
+                </div>
+            </div>
+            <div class="row features">
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-info icon"></i>
+                    <h3 class="name">Acceso fácil a la información</h3>
+                    <p class="description">Información organizada, accesible, fácil de interpretar, con datos <strong>contextualizados</strong>.<br></p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-bar-chart icon"></i>
+                    <h3 class="name">Visual e interactiva</h3>
+                    <p class="description">Las representaciones gráficas de los datos facilitan su interpretación y la capacidad interactiva permite adaptarlas al interés de la persona usuaria.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-connectdevelop icon"></i>
+                    <h3 class="name">Análisis avanzados</h3>
+                    <p class="description">Aplicación de diferentes técnicas y metodologías de Ciencia de Datos, desde captura y preparación de datos hasta ML.<br></p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-search-plus icon"></i>
+                    <h3 class="name">A fondo</h3>
+                    <p class="description">Investigaciones y estudios exhaustivos de situaciones concretas (una entidad adjudicataria, un grupo de contratos, etc.)<br></p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-cloud-download icon"></i>
+                    <h3 class="name">Datos abiertos</h3>
+                    <p class="description">Los conjuntos de datos resultantes del proyecto se publicarán para su consulta y reutilización libre y gratuita.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-code icon"></i>
+                    <h3 class="name">Código abierto</h3>
+                    <p class="description">El proyecto es de código abierto.&nbsp; Se publicará el código fuente y documentación en GitHub.<br></p>
+                </div>
+                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-newspaper-o icon"></i>
+                    <h3 class="name">Publicaciones</h3>
+                    <p class="description">Publicaciones de divulgación de tecnologías y metodologías utilizadas en el proyecto, y de cuestiones sociopolíticas sobre transparencia y contratación pública.<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="col">
+            <hr>
+        </div>
+        <div class="col" style="margin-bottom: 30px;">
+            <h3 class="text-center"><strong>Alcance</strong></h3>
+            <div></div>
+        </div>
+        <div class="container" style="padding-bottom: 30px;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-xl-10">
+                    <div class="timeline timeline-line-solid"><span class="timeline-label"><span class="label">fase 1</span></span>
+                        <div class="timeline-item" style="margin-top: 20px;">
+                            <div class="timeline-point timeline-point"></div>
+                            <div class="timeline-event">
+                                <div class="widget has-shadow">
+                                    <div class="d-flex align-items-center widget-header">
+                                        <div class="timeline-header"><i class="fa fa-search"></i></div>
+                                        <div class="d-flex flex-column me-auto">
+                                            <div class="title"><span>Búsqueda de contratos</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <p style="font-size: 0.8rem;">Búsqueda avanzada de contratos, que irá ampliando sus posibilidades y herramientas según avance el proyecto y la información relacionada que se vaya obteniendo. Por ejemplo se podrá buscar por objetos de contratos similares, o por el nombre del administrador de la empresa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-point timeline-point"></div>
+                            <div class="timeline-event">
+                                <div class="widget has-shadow">
+                                    <div class="d-flex align-items-center widget-header">
+                                        <div class="timeline-header"><i class="material-icons">group_work</i></div>
+                                        <div class="d-flex flex-column me-auto">
+                                            <div class="title"><span>Contratos similares y fraccionamiento</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <p>Para cumplir con la prohibición del fraccionamiento de contratos, la entidad no puede realizar contratos menores con el mismo objeto de contrato, cuya suma exceda los límites legales. En muchos contratos se identifican pequeñas variaciones en el objeto que no parecen justificar que se traten de distintos objetos. Por ejemplo "agujas 5mm", "agu. 5" y "agujas 10mm" se trata del mismo objeto con distintos atributos o diferentes formas de escribirlo. Con técnicas de análisis de similitud y reducción y de procesos de transformación, será posible agrupar contratos similares para evaluar el fraccionamiento de distintos tipos objetos de contratos.<br></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-point timeline-point"></div>
+                            <div class="timeline-event">
+                                <div class="widget has-shadow">
+                                    <div class="d-flex align-items-center widget-header">
+                                        <div class="timeline-header"><i class="fa fa-bar-chart"></i></div>
+                                        <div class="d-flex flex-column me-auto">
+                                            <div class="title"><span>Visualizaciones e informes sobre fraccionamiento</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <p style="font-size: 0.8rem;">¿Cuánto se ha gastado en "agujas"? ¿Y en papel? ¿Cuántos contratos menores se han realizado con objetos genéricos? ¿Qué contratos son los más frecuentes? ¿Cómo se reparten estos objetos las empresas?<br>Con las agrupaciones realizadas por objetos de contratos similares se publicarán estadísticas e informes con análisis de esta información.<br></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-point timeline-point"></div>
+                            <div class="timeline-event">
+                                <div class="widget has-shadow">
+                                    <div class="d-flex align-items-center widget-header">
+                                        <div class="timeline-header"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="icon-svg">
+                                                <path d="M2 8C2 7.44772 2.44772 7 3 7H21C21.5523 7 22 7.44772 22 8C22 8.55228 21.5523 9 21 9H3C2.44772 9 2 8.55228 2 8Z" fill="currentColor"></path>
+                                                <path d="M2 12C2 11.4477 2.44772 11 3 11H21C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13H3C2.44772 13 2 12.5523 2 12Z" fill="currentColor"></path>
+                                                <path d="M3 15C2.44772 15 2 15.4477 2 16C2 16.5523 2.44772 17 3 17H15C15.5523 17 16 16.5523 16 16C16 15.4477 15.5523 15 15 15H3Z" fill="currentColor"></path>
+                                            </svg></div>
+                                        <div class="d-flex flex-column me-auto">
+                                            <div class="title"><span>Información detallada y en contexto</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <p style="font-size: 0.8rem;">Se mostrará todo el contexto posible a la información. Por ejemplo, si se buscan contratos de suministro de una empresa en una entidad, se mostrará de manera comparativa datos agregados de otras entidades y empresas, y su evolución en el tiempo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><span class="timeline-label"><span class="label">fase 2</span></span>
+                        <div class="timeline-item" style="margin-top: 25px;">
+                            <div class="timeline-point timeline-point"></div>
+                            <div class="timeline-event">
+                                <div class="widget has-shadow">
+                                    <div class="d-flex align-items-center widget-header">
+                                        <div class="timeline-header"><i class="fa fa-database icon-svg"></i></div>
+                                        <div class="d-flex flex-column me-auto">
+                                            <div class="title"><span>Otras fuentes de datos</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <p style="font-size: 0.8rem;">Conexión con fuentes de datos abiertas, extracción de datos de documentos públicos en PDFs y apoyo en otros proyectos de transparencia y datos, para la obtención de todo tipo de información relacionada, como datos mercantiles de las empresas, responsables políticos, presupuestos, etc.<br></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-point timeline-point"></div>
+                            <div class="timeline-event">
+                                <div class="widget has-shadow">
+                                    <div class="d-flex align-items-center widget-header">
+                                        <div class="timeline-header"><i class="fas fa-search-plus icon-svg"></i></div>
+                                        <div class="d-flex flex-column me-auto">
+                                            <div class="title"><span>Análisis con los nuevos datos</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <p style="font-size: 0.8rem;">Nueva herramienta de búsqueda avanzada incluyendo los datos obtenidos de otras fuentes. Nuevos análisis e informes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-point timeline-point"></div>
+                            <div class="timeline-event">
+                                <div class="widget has-shadow">
+                                    <div class="d-flex align-items-center widget-header">
+                                        <div class="timeline-header"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-repeat icon-svg">
+                                                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"></path>
+                                                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"></path>
+                                            </svg></div>
+                                        <div class="d-flex flex-column me-auto">
+                                            <div class="title"><span>Gastos recurrentes y previsibles</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <p style="font-size: 0.8rem;">La Ley también limita la figura del contrato menor a gastos que no sean recurrentes ni previsibles. Con los datos ya elaborados será posible identificar patrones de gastos que podrían estar incumpliendo esta limitación, si por ejemplo se repiten entre ejercicios, si se realizan en volúmenes similares, de manera periódica, etc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item" style="margin-top: 0px;">
+                            <div class="timeline-point timeline-point"></div>
+                            <div class="timeline-event">
+                                <div class="widget has-shadow">
+                                    <div class="d-flex align-items-center widget-header">
+                                        <div class="timeline-header"><i class="fa fa-bar-chart"></i></div>
+                                        <div class="d-flex flex-column me-auto">
+                                            <div class="title"><span>Visualizaciones e informes sobre gastos recurrentes</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <p style="font-size: 0.8rem;">De igual forma que con el fraccionamiento del objeto del contrato, se elaborarán estadísticas e informes con estos análisis. Se utilizarán visualizaciones avanzadas interactivas que faciliten la interpretación.<br></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><span class="timeline-label"><span class="label">+ proyectos</span></span>
+                        <div class="timeline-item" style="margin-top: 25px;">
+                            <div class="timeline-point timeline-point"></div>
+                            <div class="timeline-event">
+                                <div class="widget has-shadow">
+                                    <div class="d-flex align-items-center widget-header">
+                                        <div class="timeline-header"><i class="fa fa-expand icon-svg"></i></div>
+                                        <div class="d-flex flex-column me-auto">
+                                            <div class="title"><span>Otras Comunidades Autónomas y Ayuntamientos</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <p style="font-size: 0.8rem;">Si hemos llegado hasta aquí será que el proyecto tiene utilidad e interés, así que se puede expandir a otras Comunidades Autónomas, y Ayuntamientos.<br>Los formatos en los que se publican los contratos menores en cada entidad son totalmente diferentes, por lo que se tendrá que ir extrayendo y depurando los datos caso a caso.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-point timeline-point"></div>
+                            <div class="timeline-event">
+                                <div class="widget has-shadow">
+                                    <div class="d-flex align-items-center widget-header">
+                                        <div class="timeline-header"><img class="icon-svg" src="assets/img/red.svg" style="width: 42px;"></div>
+                                        <div class="d-flex flex-column me-auto">
+                                            <div class="title"><span>Identificación de relaciones</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <p style="font-size: 0.8rem;">Identificación de vínculos entre empresas, lobies, responsables públicos, posibles relaciones de afinidad o incluso identificación de incompatibilidades.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-point timeline-point"></div>
+                            <div class="timeline-event">
+                                <div class="widget has-shadow">
+                                    <div class="d-flex align-items-center widget-header">
+                                        <div class="timeline-header"><img class="icon-svg" src="assets/img/bbdd_afinidad.svg" style="width: 42px;"></div>
+                                        <div class="d-flex flex-column me-auto">
+                                            <div class="title"><span>Base de datos colaborativa de relaciones y afinidad</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="widget-body">
+                                        <p style="font-size: 0.8rem;">Creación de una base de datos de cargos públicos, altos cargos, administradores de empresas, personas con relación de parentesco, amistad y otros vínculos relevantes. La base de datos recogerá datos que se cargarán por procesos masivos desde distintas fuentes, y también tendrá una entrada manual para usuarias verificadas como periodistas, para que registren&nbsp;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="padding-bottom: 30px;">
+        <div class="row row-cols-1 justify-content-center align-items-center">
+            <div class="col text-center"><button class="btn btn-success btn-lg text-center border rounded shadow" data-bs-toggle="modal" data-bss-tooltip="" data-bss-hover-animate="flash" type="button" title="Amadrina / apadrina el proyecto" style="font-size: 18px;font-weight: bold;" data-bs-target="#modal-colabora">COLABORA</button></div>
+        </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">
-        <a href="https://creativecommons.org/licenses/by/4.0/deed.es" style="color: whitesmoke;">
-          Contratos Menores - Comunidad de Madrid
-        </a>
-        , por &nbsp;
-        <a href="https://twitter.com/briandaya" style="color: whitesmoke;">
-          <i class="fab fa-twitter fa-lg"></i>@briandaya</a>&nbsp;|&nbsp;
-        <a href="https://www.linkedin.com/in/briandayanez/" style="color: whitesmoke;">
-          Brianda Yáñez&nbsp;<i class="fab fa-linkedin fa-lg"></i></a>
-         &nbsp; Tiene licencia
-        <a href="https://creativecommons.org/licenses/by/4.0/deed.es" style="color: whitesmoke;">
-          CC BY 4.0
-          <i class="fab fa-creative-commons fa-lg"></i>
-          <i class="fab fa-creative-commons-by fa-lg"></i>
-        </a>
-      </p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom JavaScript for this theme -->
-  <script src="js/scrolling-nav.js"></script>
-
-  <!-- Custom counter -->
-  <script src="js/counter.js"></script>
-
+    <footer class="footer-basic-dark">
+        <p class="copyright">contratos-menores.es | Brianda Yáñez&nbsp; &nbsp;<a class="cc-icons" href="https://creativecommons.org/licenses/by/4.0/deed.es"><i class="fa fa-creative-commons"></i><i class="fab fa-creative-commons-by"></i></a>&nbsp; 2021</p>
+        <div class="item social"><a href="https://twitter.com/briandaya"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/briandayanez/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/contratos-menores.js"></script>
+    <script src="https://unpkg.com/tabulator-tables@4.9.3/dist/js/tabulator.min.js"></script>
 </body>
 
 </html>
