@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.0/dist/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/flatly/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Encode+Sans&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,500,600,700,800&amp;display=swap">
@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/tabulator-tables@4.9.3/dist/css/tabulator.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/tables.css">
     <link rel="stylesheet" href="assets/css/timeline.css">
 <!-- og Meta tags -->
     <meta property="og:type" content="article" />
@@ -34,13 +35,13 @@
     <meta property="og:image" name="image" content="assets/img/contratos-menores-cm.png">
     <meta property="article:published_time" content="2021-05-01" />
     <meta property="article:modified_time" content="2021-05-01" />
-    <meta property="article:author" content="Brianda Yáñez" />
+    <meta property="article:author" content="" />
   
 
     <!-- Twitter Meta tags -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:site" content="@briandaya">
-    <meta property="twitter:creator" content="@briandaya">
+    <meta property="twitter:site" content="@data_c_menores">
+    <meta property="twitter:creator" content="@data_c_menores">
     <meta property="twitter:title" content="2.5 millones de contratos-menores.es">
     <meta property="twitter:description" content="2.537.206 Contratos Menores de Comunidad de Madrid. #Transparencia y fiscalización del gasto público a través de la Ciencia de #Datos #BigData">
     <meta property="twitter:image" content="assets/img/contratos-menores-cm.png">
@@ -54,7 +55,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="/#trabajos-realizados">Descubre</a></li>
                     <li class="nav-item"><a class="nav-link" href="/#sobre-este-proyecto">Sobre este proyecto</a></li>
-                    <li class="nav-item"><a class="btn btn-success text-center border rounded shadow" role="button" data-bs-toggle="modal" data-bss-tooltip="" data-bss-hover-animate="flash" title="Amadrina / apadrina el proyecto" style="font-size: 14px;font-weight: bold;" href="#modal-colabora" data-bs-target="#modal-colabora">COLABORA</a></li>
+                    <li class="nav-item"></li>
                     <li class="nav-item dropdown d-none"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Descubre</a>
                         <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="agregados-entidad-proveedor.html" target="_parent">Vista general por entidad y proveedor</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
                     </li>
@@ -77,11 +78,6 @@
             </div>
         </div>
     </header>
-    <div style="padding-top: 20px;padding-bottom: 20px;">
-        <div class="row row-cols-1 justify-content-center align-items-center">
-            <div class="col text-center"><button class="btn btn-success btn-lg text-center border rounded shadow" data-bs-toggle="modal" data-bss-tooltip="" data-bss-hover-animate="flash" type="button" title="Amadrina / apadrina el proyecto" style="font-size: 18px;font-weight: bold;" data-bs-target="#modal-colabora">COLABORA</button></div>
-        </div>
-    </div>
     <section id="trabajos-realizados" class="projects-horizontal">
         <div class="container">
             <div id="intro-contratos" class="intro" style="max-width: 80%;">
@@ -131,19 +127,6 @@
             </div>
         </div>
     </section>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-colabora">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content" style="background-color: #343a39;color: #ffffff;">
-                <div class="modal-header">
-                    <h4 class="modal-title">COLABORA CON EL PROYECTO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: #ffffff;"></button>
-                </div>
-                <div class="modal-body">
-                    <p>El proyecto podrá seguir adelante con tu apoyo.<br>Próximamente se habilitará un sistema de mecenazgo, sígueme en redes sociales.</p>
-                </div>
-                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cerrar</button></div>
-            </div>
-        </div>
-    </div>
     <section class="features-clean" style="padding-bottom: 1px;">
         <div class="container">
             <div class="intro" style="max-width: 80%;">
@@ -151,15 +134,9 @@
                 <p class="text-center"><strong>#Transparencia &amp; #Datos</strong><br></p>
                 <figure class="text-center bg-light shadow" style="background: #343a40;">
                     <blockquote class="blockquote">
-                        <p class="border-white shadow mb-0" id="intro-about"><br><em>Hasta ahora este era un pequeño proyecto para experimentar técnicas de Ciencia de Datos y mantener mi pasión por la Transparencia. Tras los primeros análisis he descubierto el enorme potencial que tiene. Con un impulso económico para poder dedicarle más tiempo puede convertirse en una herramienta de gran utilidad para la fiscalización social de nuestras instituciones, especialmente como fuente de información para medios de comunicación, agentes de verificación y asociaciones, entidades o colectivos interesados en la transparencia institucional.&nbsp;Sigue leyendo para ver las características&nbsp;&nbsp;y alcance del proyecto.&nbsp;Si te interesa el proyecto y tienes cualquier propuesta, pregunta o sugerencia no dudes en contactar.</em><br><br></p>
+                        <p class="border-white shadow mb-0" id="intro-about"><br><em>Me apasionan los datos. Hasta ahora este era un pequeño proyecto para experimentar técnicas de Ciencia de Datos en un ámbito que conozco muy bien como la Transparencia. Tras los primeros análisis he descubierto el enorme potencial que tiene y he diseñado un posible proyecto de mayor alcance y recorrido, para crear en herramientas de gran utilidad para la fiscalización social de nuestras instituciones, especialmente como fuente de información para medios de comunicación, agentes de verificación y asociaciones, entidades o colectivos interesados en la transparencia institucional.&nbsp;Si te interesa el proyecto y quieres colaborar o tienes cualquier propuesta, pregunta o sugerencia no dudes en contactar.</em><br><br></p>
                     </blockquote>
                 </figure>
-                <div>
-                    <p class="text-center">Puedes contribuir con el proyecto haciendo una aportación aquí:<br></p>
-                    <div class="row row-cols-1 justify-content-center align-items-center">
-                        <div class="col text-center"><button class="btn btn-success btn-lg text-center border rounded shadow" data-bs-toggle="modal" data-bss-tooltip="" data-bss-hover-animate="flash" type="button" title="Amadrina / apadrina el proyecto" style="font-size: 18px;font-weight: bold;" data-bs-target="#modal-colabora">COLABORA</button></div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -216,7 +193,7 @@
         <div class="container" style="padding-bottom: 30px;">
             <div class="row justify-content-center">
                 <div class="col-12 col-xl-10">
-                    <div class="timeline timeline-line-solid"><span class="timeline-label"><span class="label">fase 1</span></span>
+                    <div class="timeline timeline-line-solid"><span class="timeline-label"><span class="label">¿malas prácticas?</span></span>
                         <div class="timeline-item" style="margin-top: 20px;">
                             <div class="timeline-point timeline-point"></div>
                             <div class="timeline-event">
@@ -284,7 +261,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><span class="timeline-label"><span class="label">fase 2</span></span>
+                        </div><span class="timeline-label"><span class="label">+ datos</span></span>
                         <div class="timeline-item" style="margin-top: 25px;">
                             <div class="timeline-point timeline-point"></div>
                             <div class="timeline-event">
@@ -405,19 +382,16 @@
             </div>
         </div>
     </section>
-    <div style="padding-bottom: 30px;">
-        <div class="row row-cols-1 justify-content-center align-items-center">
-            <div class="col text-center"><button class="btn btn-success btn-lg text-center border rounded shadow" data-bs-toggle="modal" data-bss-tooltip="" data-bss-hover-animate="flash" type="button" title="Amadrina / apadrina el proyecto" style="font-size: 18px;font-weight: bold;" data-bs-target="#modal-colabora">COLABORA</button></div>
-        </div>
-    </div>
     <footer class="footer-basic-dark">
-        <p class="copyright">contratos-menores.es | Brianda Yáñez&nbsp; &nbsp;<a class="cc-icons" href="https://creativecommons.org/licenses/by/4.0/deed.es"><i class="fa fa-creative-commons"></i><i class="fab fa-creative-commons-by"></i></a>&nbsp; 2021</p>
-        <div class="item social"><a href="https://twitter.com/briandaya"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/in/briandayanez/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+        <p class="copyright">contratos-menores.es&nbsp; &nbsp;<a class="cc-icons" href="https://creativecommons.org/licenses/by/4.0/deed.es"><i class="fa fa-creative-commons"></i><i class="fab fa-creative-commons-by"></i></a>&nbsp; 2021</p>
+        <div class="item social"><a href="https://twitter.com/data_c_menores"><i class="fa fa-twitter"></i></a><a href="mailto:info@contratos-menores.es"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/contratos-menores.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://unpkg.com/tabulator-tables@4.9.3/dist/js/tabulator.min.js"></script>
+    <script src="assets/js/table-data.js"></script>
 </body>
 
 </html>
