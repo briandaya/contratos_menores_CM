@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_0d2ea97751a749e0a334a2236bee1cd0 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_0d2ea97751a749e0a334a2236bee1cd0" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_0d2ea97751a749e0a334a2236bee1cd0 = L.map(
+        'map_0d2ea97751a749e0a334a2236bee1cd0', {
+        center: [40.4191669595238, -3.7137174809523814],
+        zoom: 10,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_6be9e5fbeb2249cca29ed7f9f431107a = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": "&nbsp&nbsp|&nbsp&nbsp@briandaya&nbsp&nbsp|&nbsp&nbspContratos Menores Consejer\u00eda de Sanidad 2020 (Fuente: Portal de la Contrataci\u00f3n P\u00fablica de la C.M.)",
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_0d2ea97751a749e0a334a2236bee1cd0);
+    
+            var marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9 = L.markerClusterGroup({});
+            map_0d2ea97751a749e0a334a2236bee1cd0.addLayer(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+            
+    
+        var marker_c8382f103e794303aeeece4dec71d941 = L.marker(
+            [40.3964689, -3.6155502],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_f709397660a74c5f858aa0a7cc55bb10 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c8382f103e794303aeeece4dec71d941.setIcon(icon_f709397660a74c5f858aa0a7cc55bb10);
+            
+    
+            var popup_9621f4864d404281ae49e84ee6d263c2 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_2b4ef92d32ca451186303e2506b31cc9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9DZW50cm9fZGVfVHJhbnNmdXNpb24tMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9Q2VudHJvIGRlIFRyYW5zZnVzacOzbj4=" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_9621f4864d404281ae49e84ee6d263c2.setContent(i_frame_2b4ef92d32ca451186303e2506b31cc9);
+            
+
+            marker_c8382f103e794303aeeece4dec71d941.bindPopup(popup_9621f4864d404281ae49e84ee6d263c2)
+            ;
+
+            
+        
+    
+        marker_c8382f103e794303aeeece4dec71d941.bindTooltip(
+            `<div>`
+            + `Centro de Transfusión (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_992a9d75e6104d939eb2f305882bcaef = L.marker(
+            [40.4185223, -3.7000445],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_7ef2b110a9c6436b94d4b0aef0f0e334 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_992a9d75e6104d939eb2f305882bcaef.setIcon(icon_7ef2b110a9c6436b94d4b0aef0f0e334);
+            
+    
+            var popup_b0e90d1b3c8940a6b9452bddb07d33a6 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_efc6cb4dbd824739a7f0822fe9ae69f3 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Db25zZWplcmlhX2RlX1NhbmlkYWQtMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9Q29uc2VqZXLDrWEgZGUgU2FuaWRhZD4=" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_b0e90d1b3c8940a6b9452bddb07d33a6.setContent(i_frame_efc6cb4dbd824739a7f0822fe9ae69f3);
+            
+
+            marker_992a9d75e6104d939eb2f305882bcaef.bindPopup(popup_b0e90d1b3c8940a6b9452bddb07d33a6)
+            ;
+
+            
+        
+    
+        marker_992a9d75e6104d939eb2f305882bcaef.bindTooltip(
+            `<div>`
+            + `Consejería de Sanidad (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_29f3683d0a4c4e0eb55672d5da29bb79 = L.marker(
+            [40.557962100000005, -3.6108580000000003],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_7f544981b4a048f8b56beabf3bafe788 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_29f3683d0a4c4e0eb55672d5da29bb79.setIcon(icon_7f544981b4a048f8b56beabf3bafe788);
+            
+    
+            var popup_7e306a918c7c475db5104ce606aaaf91 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_532284a91165440f9026d005a44aaee5 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9FbXByZXNhX1B1YmxpY2FfP1VuaWRhZF9DZW50cmFsX2RlX1JhZGlvZGlhZ25vc3RpY28/LTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUVtcHJlc2EgUMO6YmxpY2EgP1VuaWRhZCBDZW50cmFsIGRlIFJhZGlvZGlhZ27Ds3N0aWNvPz4=" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_7e306a918c7c475db5104ce606aaaf91.setContent(i_frame_532284a91165440f9026d005a44aaee5);
+            
+
+            marker_29f3683d0a4c4e0eb55672d5da29bb79.bindPopup(popup_7e306a918c7c475db5104ce606aaaf91)
+            ;
+
+            
+        
+    
+        marker_29f3683d0a4c4e0eb55672d5da29bb79.bindTooltip(
+            `<div>`
+            + `Empresa Pública ?Unidad Central de Radiodiagnóstico? (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d5cefd4d642f4bb1a1fd84322186ad44 = L.marker(
+            [40.3864149, -3.6178462999999996],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_a9938be7ada146fbafeb710d8b59aa8d = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d5cefd4d642f4bb1a1fd84322186ad44.setIcon(icon_a9938be7ada146fbafeb710d8b59aa8d);
+            
+    
+            var popup_c4e5e969733441e7819b66929aa00d73 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_8aad6765e1094361aa6fa95f80d1d1fb = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9FbXByZXNhX1B1YmxpY2FfSG9zcGl0YWxfZGVfVmFsbGVjYXNfLV9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvXz9JbmZhbnRhX0xlb25vcj8tMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9RW1wcmVzYSBQw7pibGljYSBIb3NwaXRhbCBkZSBWYWxsZWNhcyAtIEhvc3BpdGFsIFVuaXZlcnNpdGFyaW8gwr9JbmZhbnRhIExlb25vcsK/Pg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_c4e5e969733441e7819b66929aa00d73.setContent(i_frame_8aad6765e1094361aa6fa95f80d1d1fb);
+            
+
+            marker_d5cefd4d642f4bb1a1fd84322186ad44.bindPopup(popup_c4e5e969733441e7819b66929aa00d73)
+            ;
+
+            
+        
+    
+        marker_d5cefd4d642f4bb1a1fd84322186ad44.bindTooltip(
+            `<div>`
+            + `Empresa Pública Hospital de Vallecas - Hospital Universitario ¿Infanta Leonor¿ (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_79b6247012024da9a840c98d7233b139 = L.marker(
+            [40.4184136, -3.5326281],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_317d5269573e4c7e9054e638d2ca5504 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_79b6247012024da9a840c98d7233b139.setIcon(icon_317d5269573e4c7e9054e638d2ca5504);
+            
+    
+            var popup_a9f2a252a0934d6582f8d4ffa4cda023 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_95105a4989c443e69da2e1c7b8d6dabb = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9FbXByZXNhX1B1YmxpY2FfSG9zcGl0YWxfZGVsX0hlbmFyZXMtMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9RW1wcmVzYSBQw7pibGljYSBIb3NwaXRhbCBkZWwgSGVuYXJlcz4=" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_a9f2a252a0934d6582f8d4ffa4cda023.setContent(i_frame_95105a4989c443e69da2e1c7b8d6dabb);
+            
+
+            marker_79b6247012024da9a840c98d7233b139.bindPopup(popup_a9f2a252a0934d6582f8d4ffa4cda023)
+            ;
+
+            
+        
+    
+        marker_79b6247012024da9a840c98d7233b139.bindTooltip(
+            `<div>`
+            + `Empresa Pública Hospital del Henares (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_22d15dfc101b4cd18a81309b21b85c42 = L.marker(
+            [40.55879669999999, -3.6108434000000003],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_12f6b6cd1ec647eeb4a347c371a74b34 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_22d15dfc101b4cd18a81309b21b85c42.setIcon(icon_12f6b6cd1ec647eeb4a347c371a74b34);
+            
+    
+            var popup_a80dec5b50f94e509fae23c3e5410ce2 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_26a278ca11e64caf84b8e2767d2325d2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9FbXByZXNhX1B1YmxpY2FfSG9zcGl0YWxfZGVsX05vcnRlLV9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvXz9JbmZhbnRhX1NvZmlhPy0yMDIwLnBuZyIgd2lkdGg9IjM1MiIgaGVpZ2h0PSIzMTAiIGFsdD1FbXByZXNhIFDDumJsaWNhIEhvc3BpdGFsIGRlbCBOb3J0ZS0gSG9zcGl0YWwgVW5pdmVyc2l0YXJpbyDCv0luZmFudGEgU29mw61hwr8+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_a80dec5b50f94e509fae23c3e5410ce2.setContent(i_frame_26a278ca11e64caf84b8e2767d2325d2);
+            
+
+            marker_22d15dfc101b4cd18a81309b21b85c42.bindPopup(popup_a80dec5b50f94e509fae23c3e5410ce2)
+            ;
+
+            
+        
+    
+        marker_22d15dfc101b4cd18a81309b21b85c42.bindTooltip(
+            `<div>`
+            + `Empresa Pública Hospital del Norte- Hospital Universitario ¿Infanta Sofía¿ (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7541f8bd0e414c408d4ad71312978ebb = L.marker(
+            [40.2175776, -3.782604],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_874dea567bdc460aa059f8e93b1b0148 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7541f8bd0e414c408d4ad71312978ebb.setIcon(icon_874dea567bdc460aa059f8e93b1b0148);
+            
+    
+            var popup_6dc0776403fc40308c4526307cc9a3a9 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_72aee03089a34b4a84daf15833df162d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9FbXByZXNhX1B1YmxpY2FfSG9zcGl0YWxfZGVsX1N1cl8tX0hvc3BpdGFsX1VuaXZlcnNpdGFyaW9fP0luZmFudGFfQ3Jpc3RpbmE/LTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUVtcHJlc2EgUMO6YmxpY2EgSG9zcGl0YWwgZGVsIFN1ciAtIEhvc3BpdGFsIFVuaXZlcnNpdGFyaW8gwr9JbmZhbnRhIENyaXN0aW5hwr8+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_6dc0776403fc40308c4526307cc9a3a9.setContent(i_frame_72aee03089a34b4a84daf15833df162d);
+            
+
+            marker_7541f8bd0e414c408d4ad71312978ebb.bindPopup(popup_6dc0776403fc40308c4526307cc9a3a9)
+            ;
+
+            
+        
+    
+        marker_7541f8bd0e414c408d4ad71312978ebb.bindTooltip(
+            `<div>`
+            + `Empresa Pública Hospital del Sur - Hospital Universitario ¿Infanta Cristina¿ (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_55263f87300a4453b548f052bffe89f8 = L.marker(
+            [40.29692319999999, -3.4569059999999996],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_76eac6c8014245cd8a2b9a4856cec4fa = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_55263f87300a4453b548f052bffe89f8.setIcon(icon_76eac6c8014245cd8a2b9a4856cec4fa);
+            
+    
+            var popup_0741a2378a3c4e99b1f29af11c670640 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_596f61d00fbf46a88d228e3eac24832b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9FbXByZXNhX1B1YmxpY2FfSG9zcGl0YWxfZGVsX1N1cmVzdGUtMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9RW1wcmVzYSBQw7pibGljYSBIb3NwaXRhbCBkZWwgU3VyZXN0ZT4=" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_0741a2378a3c4e99b1f29af11c670640.setContent(i_frame_596f61d00fbf46a88d228e3eac24832b);
+            
+
+            marker_55263f87300a4453b548f052bffe89f8.bindPopup(popup_0741a2378a3c4e99b1f29af11c670640)
+            ;
+
+            
+        
+    
+        marker_55263f87300a4453b548f052bffe89f8.bindTooltip(
+            `<div>`
+            + `Empresa Pública Hospital del Sureste (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e0190fefb9b54cc48617157ed0e049ba = L.marker(
+            [40.557962100000005, -3.6108580000000003],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_c286d2477aaf4552b44a623b6798ce3f = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e0190fefb9b54cc48617157ed0e049ba.setIcon(icon_c286d2477aaf4552b44a623b6798ce3f);
+            
+    
+            var popup_4f8c8b04d8324103a41d9fdc60fad0e2 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_2cb7018192aa47f1b09582de7a0a5e31 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9FbXByZXNhX1B1YmxpY2FfVW5pZGFkX0NlbnRyYWxfZGVfUmFkaW9kaWFnbm9zdGljby0yMDIwLnBuZyIgd2lkdGg9IjM1MiIgaGVpZ2h0PSIzMTAiIGFsdD1FbXByZXNhIFDDumJsaWNhIFVuaWRhZCBDZW50cmFsIGRlIFJhZGlvZGlhZ27Ds3N0aWNvPg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_4f8c8b04d8324103a41d9fdc60fad0e2.setContent(i_frame_2cb7018192aa47f1b09582de7a0a5e31);
+            
+
+            marker_e0190fefb9b54cc48617157ed0e049ba.bindPopup(popup_4f8c8b04d8324103a41d9fdc60fad0e2)
+            ;
+
+            
+        
+    
+        marker_e0190fefb9b54cc48617157ed0e049ba.bindTooltip(
+            `<div>`
+            + `Empresa Pública Unidad Central de Radiodiagnóstico (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1e31c2ab34e04ded8a942d8e0c436399 = L.marker(
+            [40.557962100000005, -3.6108580000000003],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_33b8d23b9aa14fb9b9ee770cbabf0f26 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1e31c2ab34e04ded8a942d8e0c436399.setIcon(icon_33b8d23b9aa14fb9b9ee770cbabf0f26);
+            
+    
+            var popup_dfd76f159d304272a847dc658665cfc3 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_0ee4e4206013479488ff4f51101557f1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9FbXByZXNhX1B1YmxpY2FfP1VuaWRhZF9DZW50cmFsX2RlX1JhZGlvZGlhZ25vc3RpY28/LTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUVtcHJlc2EgUMO6YmxpY2Egwr9VbmlkYWQgQ2VudHJhbCBkZSBSYWRpb2RpYWduw7NzdGljb8K/Pg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_dfd76f159d304272a847dc658665cfc3.setContent(i_frame_0ee4e4206013479488ff4f51101557f1);
+            
+
+            marker_1e31c2ab34e04ded8a942d8e0c436399.bindPopup(popup_dfd76f159d304272a847dc658665cfc3)
+            ;
+
+            
+        
+    
+        marker_1e31c2ab34e04ded8a942d8e0c436399.bindTooltip(
+            `<div>`
+            + `Empresa Pública ¿Unidad Central de Radiodiagnóstico¿ (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_06ed0870cb5642e2b1c1e587ce0c4c57 = L.marker(
+            [40.4680415, -3.7271975],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_e0f4f5f82929463ebdc8eb3bdb82c1db = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_06ed0870cb5642e2b1c1e587ce0c4c57.setIcon(icon_e0f4f5f82929463ebdc8eb3bdb82c1db);
+            
+    
+            var popup_900f88f84b2a4668b55fe994eca629a7 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_1e86299d592241269ac7cca61e3dc6fe = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9HZXJlbmNpYV9kZV9BdGVuY2lvbl9QcmltYXJpYS0yMDIwLnBuZyIgd2lkdGg9IjM1MiIgaGVpZ2h0PSIzMTAiIGFsdD1HZXJlbmNpYSBkZSBBdGVuY2nDs24gUHJpbWFyaWE+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_900f88f84b2a4668b55fe994eca629a7.setContent(i_frame_1e86299d592241269ac7cca61e3dc6fe);
+            
+
+            marker_06ed0870cb5642e2b1c1e587ce0c4c57.bindPopup(popup_900f88f84b2a4668b55fe994eca629a7)
+            ;
+
+            
+        
+    
+        marker_06ed0870cb5642e2b1c1e587ce0c4c57.bindTooltip(
+            `<div>`
+            + `Gerencia de Atención Primaria (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_058343771534433e9c008d6100d303bf = L.marker(
+            [40.4475415, -3.7080620000000004],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_aecbfdc7a6ab44d080d0777afab61cc8 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_058343771534433e9c008d6100d303bf.setIcon(icon_aecbfdc7a6ab44d080d0777afab61cc8);
+            
+    
+            var popup_0d41d09fea2b4b569092473df3571400 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_f9cdc3eda6a04d14924eb13bdb66b4ce = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9DZW50cmFsX2RlX0NydXpfUm9qYS0yMDIwLnBuZyIgd2lkdGg9IjM1MiIgaGVpZ2h0PSIzMTAiIGFsdD1Ib3NwaXRhbCBDZW50cmFsIGRlIENydXogUm9qYT4=" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_0d41d09fea2b4b569092473df3571400.setContent(i_frame_f9cdc3eda6a04d14924eb13bdb66b4ce);
+            
+
+            marker_058343771534433e9c008d6100d303bf.bindPopup(popup_0d41d09fea2b4b569092473df3571400)
+            ;
+
+            
+        
+    
+        marker_058343771534433e9c008d6100d303bf.bindTooltip(
+            `<div>`
+            + `Hospital Central de Cruz Roja (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f0970d0eb03740f29edd553922248bcd = L.marker(
+            [40.4414767, -3.7206312999999995],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_f3b0b3cfc1d5444e916a0f3bcb11bbb3 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f0970d0eb03740f29edd553922248bcd.setIcon(icon_f3b0b3cfc1d5444e916a0f3bcb11bbb3);
+            
+    
+            var popup_63c0c521a36049e5ad15c0d4be27ed33 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_b0a5a55741e949b3ac6f8b5ce5f01d9a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9DbGluaWNvX1Nhbl9DYXJsb3MtMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9SG9zcGl0YWwgQ2zDrW5pY28gU2FuIENhcmxvcz4=" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_63c0c521a36049e5ad15c0d4be27ed33.setContent(i_frame_b0a5a55741e949b3ac6f8b5ce5f01d9a);
+            
+
+            marker_f0970d0eb03740f29edd553922248bcd.bindPopup(popup_63c0c521a36049e5ad15c0d4be27ed33)
+            ;
+
+            
+        
+    
+        marker_f0970d0eb03740f29edd553922248bcd.bindTooltip(
+            `<div>`
+            + `Hospital Clínico San Carlos (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ce5bbc5030684efaafe625a5cb515b8c = L.marker(
+            [40.5317516, -3.6917589],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_280af4733bf04d64a1bd76cb641432d7 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ce5bbc5030684efaafe625a5cb515b8c.setIcon(icon_280af4733bf04d64a1bd76cb641432d7);
+            
+    
+            var popup_470a8f31fd0645ab8f4058db35e4a3fc = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_709420f8e29c4c16962aed84d916d68e = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Eci5fUi5fTGFmb3JhLTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUhvc3BpdGFsIERyLiBSLiBMYWZvcmE+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_470a8f31fd0645ab8f4058db35e4a3fc.setContent(i_frame_709420f8e29c4c16962aed84d916d68e);
+            
+
+            marker_ce5bbc5030684efaafe625a5cb515b8c.bindPopup(popup_470a8f31fd0645ab8f4058db35e4a3fc)
+            ;
+
+            
+        
+    
+        marker_ce5bbc5030684efaafe625a5cb515b8c.bindTooltip(
+            `<div>`
+            + `Hospital Dr. R. Lafora (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2ad18b1a7af5453799ffb3a1fe97bacc = L.marker(
+            [40.4191053, -3.6703866],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_8a1b300bef534903b54b7b9427eb6cf1 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2ad18b1a7af5453799ffb3a1fe97bacc.setIcon(icon_8a1b300bef534903b54b7b9427eb6cf1);
+            
+    
+            var popup_a5c821fc662149208b1e9c635be7e1c7 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_249edd8042964242981b13c4a729d397 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9HZW5lcmFsX1VuaXZlcnNpdGFyaW9fR3JlZ29yaW9fTWFyYW5vbi0yMDIwLnBuZyIgd2lkdGg9IjM1MiIgaGVpZ2h0PSIzMTAiIGFsdD1Ib3NwaXRhbCBHZW5lcmFsIFVuaXZlcnNpdGFyaW8gR3JlZ29yaW8gTWFyYcOxw7NuPg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_a5c821fc662149208b1e9c635be7e1c7.setContent(i_frame_249edd8042964242981b13c4a729d397);
+            
+
+            marker_2ad18b1a7af5453799ffb3a1fe97bacc.bindPopup(popup_a5c821fc662149208b1e9c635be7e1c7)
+            ;
+
+            
+        
+    
+        marker_2ad18b1a7af5453799ffb3a1fe97bacc.bindTooltip(
+            `<div>`
+            + `Hospital General Universitario Gregorio Marañón (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_13a9f1c433a34e7abde45a33a478cd8b = L.marker(
+            [40.414431, -3.6761187000000004],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_74827c7770c14f7c8c3a56e350d0d4dc = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_13a9f1c433a34e7abde45a33a478cd8b.setIcon(icon_74827c7770c14f7c8c3a56e350d0d4dc);
+            
+    
+            var popup_7c2757ce5d9140058f8fbe37eed7fb62 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_60c5e8dcf67b4026b0acb2bc0fa40a52 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9JbmZhbnRpbF9Vbml2ZXJzaXRhcmlvX05pbm9fSmVzdXMtMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9SG9zcGl0YWwgSW5mYW50aWwgVW5pdmVyc2l0YXJpbyBOacOxbyBKZXPDunM+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_7c2757ce5d9140058f8fbe37eed7fb62.setContent(i_frame_60c5e8dcf67b4026b0acb2bc0fa40a52);
+            
+
+            marker_13a9f1c433a34e7abde45a33a478cd8b.bindPopup(popup_7c2757ce5d9140058f8fbe37eed7fb62)
+            ;
+
+            
+        
+    
+        marker_13a9f1c433a34e7abde45a33a478cd8b.bindTooltip(
+            `<div>`
+            + `Hospital Infantil Universitario Niño Jesús (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_789995d23faf469a9e1afc3773f1a4ff = L.marker(
+            [40.76071049999999, -4.07402],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_6ef005b7927d4f89a55f54d381129e86 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_789995d23faf469a9e1afc3773f1a4ff.setIcon(icon_6ef005b7927d4f89a55f54d381129e86);
+            
+    
+            var popup_ca6e7d9903fe4131bd74d30c19711675 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_ef1ba6f0af504bfda8f4a9ab0cd328f0 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9MYV9GdWVuZnJpYS0yMDIwLnBuZyIgd2lkdGg9IjM1MiIgaGVpZ2h0PSIzMTAiIGFsdD1Ib3NwaXRhbCBMYSBGdWVuZnLDrWE+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_ca6e7d9903fe4131bd74d30c19711675.setContent(i_frame_ef1ba6f0af504bfda8f4a9ab0cd328f0);
+            
+
+            marker_789995d23faf469a9e1afc3773f1a4ff.bindPopup(popup_ca6e7d9903fe4131bd74d30c19711675)
+            ;
+
+            
+        
+    
+        marker_789995d23faf469a9e1afc3773f1a4ff.bindTooltip(
+            `<div>`
+            + `Hospital La Fuenfría (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_837ef77ed5514c2e9fc054dfbdcf13b9 = L.marker(
+            [40.4811633, -3.6873977999999994],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_a7791111c4f345ea8569288765c6bfa6 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_837ef77ed5514c2e9fc054dfbdcf13b9.setIcon(icon_a7791111c4f345ea8569288765c6bfa6);
+            
+    
+            var popup_7bf5dfed845e4cb888dba88e8dbd8bea = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_765236f5fd7b4a82b7fab8a4b39cf0f0 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9MYV9QYXotMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9SG9zcGl0YWwgTGEgUGF6Pg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_7bf5dfed845e4cb888dba88e8dbd8bea.setContent(i_frame_765236f5fd7b4a82b7fab8a4b39cf0f0);
+            
+
+            marker_837ef77ed5514c2e9fc054dfbdcf13b9.bindPopup(popup_7bf5dfed845e4cb888dba88e8dbd8bea)
+            ;
+
+            
+        
+    
+        marker_837ef77ed5514c2e9fc054dfbdcf13b9.bindTooltip(
+            `<div>`
+            + `Hospital La Paz (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9decd335b3264c0eae87959d452b3da5 = L.marker(
+            [40.48760430000001, -3.6951156000000003],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_a9e89684d7a942b498417f57db8b5120 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9decd335b3264c0eae87959d452b3da5.setIcon(icon_a9e89684d7a942b498417f57db8b5120);
+            
+    
+            var popup_0bbc0be0450b4f24b506229a0a3eff05 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_2287357051a0432a9dd31b694d12d98a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9SYW1vbl95X0NhamFsLTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUhvc3BpdGFsIFJhbcOzbiB5IENhamFsPg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_0bbc0be0450b4f24b506229a0a3eff05.setContent(i_frame_2287357051a0432a9dd31b694d12d98a);
+            
+
+            marker_9decd335b3264c0eae87959d452b3da5.bindPopup(popup_0bbc0be0450b4f24b506229a0a3eff05)
+            ;
+
+            
+        
+    
+        marker_9decd335b3264c0eae87959d452b3da5.bindTooltip(
+            `<div>`
+            + `Hospital Ramón y Cajal (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_414a81f45f684b5db87fa17139648ece = L.marker(
+            [40.3202032, -3.7693669],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_944e37a21c2b401eae75524e899dd65e = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_414a81f45f684b5db87fa17139648ece.setIcon(icon_944e37a21c2b401eae75524e899dd65e);
+            
+    
+            var popup_e4076ae644f44f23acf4ef92e2f50ad4 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_35521c7e401446cbbae9068673fd8d7c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9TZXZlcm9fT2Nob2EtMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9SG9zcGl0YWwgU2V2ZXJvIE9jaG9hPg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_e4076ae644f44f23acf4ef92e2f50ad4.setContent(i_frame_35521c7e401446cbbae9068673fd8d7c);
+            
+
+            marker_414a81f45f684b5db87fa17139648ece.bindPopup(popup_e4076ae644f44f23acf4ef92e2f50ad4)
+            ;
+
+            
+        
+    
+        marker_414a81f45f684b5db87fa17139648ece.bindTooltip(
+            `<div>`
+            + `Hospital Severo Ochoa (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a8bca417bacf441a9df4f5825a26fe3c = L.marker(
+            [40.3760381, -3.6990068],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_2ff494be569b4efcbfe5eb3b723e481c = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a8bca417bacf441a9df4f5825a26fe3c.setIcon(icon_2ff494be569b4efcbfe5eb3b723e481c);
+            
+    
+            var popup_37ac0154eca94ed4b67dd49e7cd74dcf = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_e2dcfc2425cf4594b485675b0b6c164a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX0RvY2VfZGVfT2N0dWJyZS0yMDIwLnBuZyIgd2lkdGg9IjM1MiIgaGVpZ2h0PSIzMTAiIGFsdD1Ib3NwaXRhbCBVbml2ZXJzaXRhcmlvIERvY2UgZGUgT2N0dWJyZT4=" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_37ac0154eca94ed4b67dd49e7cd74dcf.setContent(i_frame_e2dcfc2425cf4594b485675b0b6c164a);
+            
+
+            marker_a8bca417bacf441a9df4f5825a26fe3c.bindPopup(popup_37ac0154eca94ed4b67dd49e7cd74dcf)
+            ;
+
+            
+        
+    
+        marker_a8bca417bacf441a9df4f5825a26fe3c.bindTooltip(
+            `<div>`
+            + `Hospital Universitario Doce de Octubre (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b50096f3d9ac4d3fbd4e5aa3fb357c83 = L.marker(
+            [40.3488135, -3.837392899999999],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_dac058ed5c0140a9a8e46640b921410f = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b50096f3d9ac4d3fbd4e5aa3fb357c83.setIcon(icon_dac058ed5c0140a9a8e46640b921410f);
+            
+    
+            var popup_3707144b915e4053b59f931c1fb52e28 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_188554cb41b7436a9308ab39a1c01f02 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX0Z1bmRhY2lvbl9BbGNvcmNvbi0yMDIwLnBuZyIgd2lkdGg9IjM1MiIgaGVpZ2h0PSIzMTAiIGFsdD1Ib3NwaXRhbCBVbml2ZXJzaXRhcmlvIEZ1bmRhY2nDs24gQWxjb3Jjw7NuPg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_3707144b915e4053b59f931c1fb52e28.setContent(i_frame_188554cb41b7436a9308ab39a1c01f02);
+            
+
+            marker_b50096f3d9ac4d3fbd4e5aa3fb357c83.bindPopup(popup_3707144b915e4053b59f931c1fb52e28)
+            ;
+
+            
+        
+    
+        marker_b50096f3d9ac4d3fbd4e5aa3fb357c83.bindTooltip(
+            `<div>`
+            + `Hospital Universitario Fundación Alcorcón (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5d92b2f2d62e49bea7510a5bdece8034 = L.marker(
+            [40.218168799999994, -3.7821326],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_7b321aa6e46143308f36439729dd3ba1 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5d92b2f2d62e49bea7510a5bdece8034.setIcon(icon_7b321aa6e46143308f36439729dd3ba1);
+            
+    
+            var popup_1b4123632660483f854da40a8e0bb821 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_cf448d31c4de423ba18beb87343d059f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX0luZmFudGFfQ3Jpc3RpbmEtMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9SG9zcGl0YWwgVW5pdmVyc2l0YXJpbyBJbmZhbnRhIENyaXN0aW5hPg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_1b4123632660483f854da40a8e0bb821.setContent(i_frame_cf448d31c4de423ba18beb87343d059f);
+            
+
+            marker_5d92b2f2d62e49bea7510a5bdece8034.bindPopup(popup_1b4123632660483f854da40a8e0bb821)
+            ;
+
+            
+        
+    
+        marker_5d92b2f2d62e49bea7510a5bdece8034.bindTooltip(
+            `<div>`
+            + `Hospital Universitario Infanta Cristina (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_790885c1c74a401896f37c928f5b7760 = L.marker(
+            [40.3864149, -3.6178462999999996],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_d2f49d6e0a7940108cfc49611e390ade = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_790885c1c74a401896f37c928f5b7760.setIcon(icon_d2f49d6e0a7940108cfc49611e390ade);
+            
+    
+            var popup_47a746791899435fa4e4bb0a0bf729ec = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_20862090571b4c4a84e9c8fbf0f38175 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX0luZmFudGFfTGVvbm9yLTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUhvc3BpdGFsIFVuaXZlcnNpdGFyaW8gSW5mYW50YSBMZW9ub3I+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_47a746791899435fa4e4bb0a0bf729ec.setContent(i_frame_20862090571b4c4a84e9c8fbf0f38175);
+            
+
+            marker_790885c1c74a401896f37c928f5b7760.bindPopup(popup_47a746791899435fa4e4bb0a0bf729ec)
+            ;
+
+            
+        
+    
+        marker_790885c1c74a401896f37c928f5b7760.bindTooltip(
+            `<div>`
+            + `Hospital Universitario Infanta Leonor (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6906fbd5ab3f4824ac8b6e03a6a82882 = L.marker(
+            [40.55879669999999, -3.6108434000000003],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_7776ec7c2d2c45a9aaba43eac1eb4b20 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6906fbd5ab3f4824ac8b6e03a6a82882.setIcon(icon_7776ec7c2d2c45a9aaba43eac1eb4b20);
+            
+    
+            var popup_6a62ef35f1ea409abb9dce05c7c27671 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_8be196a0dc9c4ebaa5469b9f9db8dda5 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX0luZmFudGFfU29maWEtMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9SG9zcGl0YWwgVW5pdmVyc2l0YXJpbyBJbmZhbnRhIFNvZsOtYT4=" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_6a62ef35f1ea409abb9dce05c7c27671.setContent(i_frame_8be196a0dc9c4ebaa5469b9f9db8dda5);
+            
+
+            marker_6906fbd5ab3f4824ac8b6e03a6a82882.bindPopup(popup_6a62ef35f1ea409abb9dce05c7c27671)
+            ;
+
+            
+        
+    
+        marker_6906fbd5ab3f4824ac8b6e03a6a82882.bindTooltip(
+            `<div>`
+            + `Hospital Universitario Infanta Sofía (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_59634326ef30498bbf34d569baddfd52 = L.marker(
+            [40.5103622, -3.3487273999999996],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_0787d4acdc2548ab94c59542faef9aa5 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_59634326ef30498bbf34d569baddfd52.setIcon(icon_0787d4acdc2548ab94c59542faef9aa5);
+            
+    
+            var popup_68146a98714748d0b34bbd4d86da0209 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_9e5e0e754dfe4546af98b80817e766be = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX1ByaW5jaXBlX2RlX0FzdHVyaWFzLTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUhvc3BpdGFsIFVuaXZlcnNpdGFyaW8gUHLDrW5jaXBlIGRlIEFzdHVyaWFzPg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_68146a98714748d0b34bbd4d86da0209.setContent(i_frame_9e5e0e754dfe4546af98b80817e766be);
+            
+
+            marker_59634326ef30498bbf34d569baddfd52.bindPopup(popup_68146a98714748d0b34bbd4d86da0209)
+            ;
+
+            
+        
+    
+        marker_59634326ef30498bbf34d569baddfd52.bindTooltip(
+            `<div>`
+            + `Hospital Universitario Príncipe de Asturias (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a303475a401a4f95a0266874c3441c5c = L.marker(
+            [40.450208200000006, -3.8742157999999995],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_7a935d1fbcef4966a31b317716aa5efc = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a303475a401a4f95a0266874c3441c5c.setIcon(icon_7a935d1fbcef4966a31b317716aa5efc);
+            
+    
+            var popup_c3ec7a38df234f63b71b86a448ff5417 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_c45b725ea466474595c2d07e9374069f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX1B1ZXJ0YV9kZV9IaWVycm8tMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9SG9zcGl0YWwgVW5pdmVyc2l0YXJpbyBQdWVydGEgZGUgSGllcnJvPg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_c3ec7a38df234f63b71b86a448ff5417.setContent(i_frame_c45b725ea466474595c2d07e9374069f);
+            
+
+            marker_a303475a401a4f95a0266874c3441c5c.bindPopup(popup_c3ec7a38df234f63b71b86a448ff5417)
+            ;
+
+            
+        
+    
+        marker_a303475a401a4f95a0266874c3441c5c.bindTooltip(
+            `<div>`
+            + `Hospital Universitario Puerta de Hierro (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7007201092fc49a8927262de8346b860 = L.marker(
+            [40.4217969, -3.6710190000000003],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_914df620e638443090a912d47540d4c3 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7007201092fc49a8927262de8346b860.setIcon(icon_914df620e638443090a912d47540d4c3);
+            
+    
+            var popup_3849e36500e04431b021c5efff8b6df9 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_bc888ff016b246a783c2a8dd1e2ecd48 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX1NhbnRhX0NyaXN0aW5hLTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUhvc3BpdGFsIFVuaXZlcnNpdGFyaW8gU2FudGEgQ3Jpc3RpbmE+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_3849e36500e04431b021c5efff8b6df9.setContent(i_frame_bc888ff016b246a783c2a8dd1e2ecd48);
+            
+
+            marker_7007201092fc49a8927262de8346b860.bindPopup(popup_3849e36500e04431b021c5efff8b6df9)
+            ;
+
+            
+        
+    
+        marker_7007201092fc49a8927262de8346b860.bindTooltip(
+            `<div>`
+            + `Hospital Universitario Santa Cristina (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_fbec626feb384478a4d5aa837adba2c9 = L.marker(
+            [40.2870842, -3.8157864999999997],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_e7a6d30a67de46b0bfff6045cb306ce9 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fbec626feb384478a4d5aa837adba2c9.setIcon(icon_e7a6d30a67de46b0bfff6045cb306ce9);
+            
+    
+            var popup_3397a49591a044d293b19ffc804303c4 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_98de699d97874a4786fad4fc4c25a164 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX2RlX0Z1ZW5sYWJyYWRhLTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUhvc3BpdGFsIFVuaXZlcnNpdGFyaW8gZGUgRnVlbmxhYnJhZGE+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_3397a49591a044d293b19ffc804303c4.setContent(i_frame_98de699d97874a4786fad4fc4c25a164);
+            
+
+            marker_fbec626feb384478a4d5aa837adba2c9.bindPopup(popup_3397a49591a044d293b19ffc804303c4)
+            ;
+
+            
+        
+    
+        marker_fbec626feb384478a4d5aa837adba2c9.bindTooltip(
+            `<div>`
+            + `Hospital Universitario de Fuenlabrada (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7ac264a9b80e40139d7fbf2ab973fbbe = L.marker(
+            [40.3125445, -3.7423229],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_31e273c47b674f4b9b91a210186a208e = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7ac264a9b80e40139d7fbf2ab973fbbe.setIcon(icon_31e273c47b674f4b9b91a210186a208e);
+            
+    
+            var popup_9ebcb174d791482d92288f1428300018 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_e669be5c06f140158cb832d982647749 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX2RlX0dldGFmZS0yMDIwLnBuZyIgd2lkdGg9IjM1MiIgaGVpZ2h0PSIzMTAiIGFsdD1Ib3NwaXRhbCBVbml2ZXJzaXRhcmlvIGRlIEdldGFmZT4=" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_9ebcb174d791482d92288f1428300018.setContent(i_frame_e669be5c06f140158cb832d982647749);
+            
+
+            marker_7ac264a9b80e40139d7fbf2ab973fbbe.bindPopup(popup_9ebcb174d791482d92288f1428300018)
+            ;
+
+            
+        
+    
+        marker_7ac264a9b80e40139d7fbf2ab973fbbe.bindTooltip(
+            `<div>`
+            + `Hospital Universitario de Getafe (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7d885488caf5468ebce5e06a1fac0f58 = L.marker(
+            [40.43398320000001, -3.6757263999999994],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_9a54bc3a92fe4dc6b6eb4c7c2e2a09cf = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7d885488caf5468ebce5e06a1fac0f58.setIcon(icon_9a54bc3a92fe4dc6b6eb4c7c2e2a09cf);
+            
+    
+            var popup_6f39d61cea294c149e1d16fe2c4a2722 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_14091313281e454084efe8c78dc3508d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX2RlX2xhX1ByaW5jZXNhLTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUhvc3BpdGFsIFVuaXZlcnNpdGFyaW8gZGUgbGEgUHJpbmNlc2E+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_6f39d61cea294c149e1d16fe2c4a2722.setContent(i_frame_14091313281e454084efe8c78dc3508d);
+            
+
+            marker_7d885488caf5468ebce5e06a1fac0f58.bindPopup(popup_6f39d61cea294c149e1d16fe2c4a2722)
+            ;
+
+            
+        
+    
+        marker_7d885488caf5468ebce5e06a1fac0f58.bindTooltip(
+            `<div>`
+            + `Hospital Universitario de la Princesa (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a40e84c68e614619b7ab81fe4b5b2484 = L.marker(
+            [40.4184136, -3.5326281],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_b4d0e627b8c34f64ab649f65ad2c5974 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a40e84c68e614619b7ab81fe4b5b2484.setIcon(icon_b4d0e627b8c34f64ab649f65ad2c5974);
+            
+    
+            var popup_7a9659b107c849eea100e78d31b01c03 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_0c4e3ab880a74a02b430265f97dcacef = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX2RlbF9IZW5hcmVzLTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUhvc3BpdGFsIFVuaXZlcnNpdGFyaW8gZGVsIEhlbmFyZXM+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_7a9659b107c849eea100e78d31b01c03.setContent(i_frame_0c4e3ab880a74a02b430265f97dcacef);
+            
+
+            marker_a40e84c68e614619b7ab81fe4b5b2484.bindPopup(popup_7a9659b107c849eea100e78d31b01c03)
+            ;
+
+            
+        
+    
+        marker_a40e84c68e614619b7ab81fe4b5b2484.bindTooltip(
+            `<div>`
+            + `Hospital Universitario del Henares (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1d640727a3da479e82a634e1cda2bce3 = L.marker(
+            [40.29692319999999, -3.4569059999999996],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_e22cd91091e147a8a98fae615553a8ac = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1d640727a3da479e82a634e1cda2bce3.setIcon(icon_e22cd91091e147a8a98fae615553a8ac);
+            
+    
+            var popup_5f2f69462a684c61944c24947f051e99 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_c7fd2eac3d9e41e19e9f224cd313f5f2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX2RlbF9TdXJlc3RlLTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUhvc3BpdGFsIFVuaXZlcnNpdGFyaW8gZGVsIFN1cmVzdGU+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_5f2f69462a684c61944c24947f051e99.setContent(i_frame_c7fd2eac3d9e41e19e9f224cd313f5f2);
+            
+
+            marker_1d640727a3da479e82a634e1cda2bce3.bindPopup(popup_5f2f69462a684c61944c24947f051e99)
+            ;
+
+            
+        
+    
+        marker_1d640727a3da479e82a634e1cda2bce3.bindTooltip(
+            `<div>`
+            + `Hospital Universitario del Sureste (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1394c68bb24e4773b642ff9c36107738 = L.marker(
+            [40.0567701, -3.6110955000000002],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_6407659c72b346edafbb34a6f5b9a654 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1394c68bb24e4773b642ff9c36107738.setIcon(icon_6407659c72b346edafbb34a6f5b9a654);
+            
+    
+            var popup_446b8ad21937466bb727efae6614aab7 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_e00413a0241b40a899546950fa902eaa = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9Vbml2ZXJzaXRhcmlvX2RlbF9UYWpvLTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUhvc3BpdGFsIFVuaXZlcnNpdGFyaW8gZGVsIFRham8+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_446b8ad21937466bb727efae6614aab7.setContent(i_frame_e00413a0241b40a899546950fa902eaa);
+            
+
+            marker_1394c68bb24e4773b642ff9c36107738.bindPopup(popup_446b8ad21937466bb727efae6614aab7)
+            ;
+
+            
+        
+    
+        marker_1394c68bb24e4773b642ff9c36107738.bindTooltip(
+            `<div>`
+            + `Hospital Universitario del Tajo (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7fef9beb197042fa9b10b2ed3445dae5 = L.marker(
+            [40.247610400000006, -4.2763366],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_3e8c84c5609d4cad8ee7005348bb0d57 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7fef9beb197042fa9b10b2ed3445dae5.setIcon(icon_3e8c84c5609d4cad8ee7005348bb0d57);
+            
+    
+            var popup_eca85dd23c4b4c029b13d6c2053c5023 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_b6815c210da049c48709d5fc037dac44 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9WaXJnZW5fZGVfbGFfUG92ZWRhLTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUhvc3BpdGFsIFZpcmdlbiBkZSBsYSBQb3ZlZGE+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_eca85dd23c4b4c029b13d6c2053c5023.setContent(i_frame_b6815c210da049c48709d5fc037dac44);
+            
+
+            marker_7fef9beb197042fa9b10b2ed3445dae5.bindPopup(popup_eca85dd23c4b4c029b13d6c2053c5023)
+            ;
+
+            
+        
+    
+        marker_7fef9beb197042fa9b10b2ed3445dae5.bindTooltip(
+            `<div>`
+            + `Hospital Virgen de la Poveda (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_567e0e3a6bd74ce4b7dffa4189bb80ae = L.marker(
+            [40.3811667, -3.6191497999999998],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_30cf08b9a58b4556b48f5c7f12d28655 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_567e0e3a6bd74ce4b7dffa4189bb80ae.setIcon(icon_30cf08b9a58b4556b48f5c7f12d28655);
+            
+    
+            var popup_c4786101b8394d8da01b2bfcf706ac3a = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_99f92d9b988a4b11b88e43ad3bf1989b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9WaXJnZW5fZGVfbGFfVG9ycmUtMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9SG9zcGl0YWwgVmlyZ2VuIGRlIGxhIFRvcnJlPg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_c4786101b8394d8da01b2bfcf706ac3a.setContent(i_frame_99f92d9b988a4b11b88e43ad3bf1989b);
+            
+
+            marker_567e0e3a6bd74ce4b7dffa4189bb80ae.bindPopup(popup_c4786101b8394d8da01b2bfcf706ac3a)
+            ;
+
+            
+        
+    
+        marker_567e0e3a6bd74ce4b7dffa4189bb80ae.bindTooltip(
+            `<div>`
+            + `Hospital Virgen de la Torre (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f700e2c016a3487b818aad6c7e9135de = L.marker(
+            [40.6075747, -4.1192623],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_404b801c1b694c10863691656df79e0c = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f700e2c016a3487b818aad6c7e9135de.setIcon(icon_404b801c1b694c10863691656df79e0c);
+            
+    
+            var popup_3e5e1b26943149bf8124e64943818b5f = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_b79f5551324f45c9a4279d00c15524a5 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9kZV9FbF9Fc2NvcmlhbC0yMDIwLnBuZyIgd2lkdGg9IjM1MiIgaGVpZ2h0PSIzMTAiIGFsdD1Ib3NwaXRhbCBkZSBFbCBFc2NvcmlhbD4=" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_3e5e1b26943149bf8124e64943818b5f.setContent(i_frame_b79f5551324f45c9a4279d00c15524a5);
+            
+
+            marker_f700e2c016a3487b818aad6c7e9135de.bindPopup(popup_3e5e1b26943149bf8124e64943818b5f)
+            ;
+
+            
+        
+    
+        marker_f700e2c016a3487b818aad6c7e9135de.bindTooltip(
+            `<div>`
+            + `Hospital de El Escorial (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_065b55302cfd488d9ceaab051b3b5996 = L.marker(
+            [40.6695311, -4.0863566],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_25a65e4261734a9791c7884073997113 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_065b55302cfd488d9ceaab051b3b5996.setIcon(icon_25a65e4261734a9791c7884073997113);
+            
+    
+            var popup_bda958dbbbdc4fc3bbad3c6a1949defc = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_b55a566ab37942969ea4a1fba9eba448 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9kZV9HdWFkYXJyYW1hLTIwMjAucG5nIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjMxMCIgYWx0PUhvc3BpdGFsIGRlIEd1YWRhcnJhbWE+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_bda958dbbbdc4fc3bbad3c6a1949defc.setContent(i_frame_b55a566ab37942969ea4a1fba9eba448);
+            
+
+            marker_065b55302cfd488d9ceaab051b3b5996.bindPopup(popup_bda958dbbbdc4fc3bbad3c6a1949defc)
+            ;
+
+            
+        
+    
+        marker_065b55302cfd488d9ceaab051b3b5996.bindTooltip(
+            `<div>`
+            + `Hospital de Guadarrama (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7d2dbceedbe94b6cbf2bb1ef63fc96e5 = L.marker(
+            [40.3160116, -3.8776099000000004],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_91b2b6eb4b3f4a89811dd477e0823b81 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7d2dbceedbe94b6cbf2bb1ef63fc96e5.setIcon(icon_91b2b6eb4b3f4a89811dd477e0823b81);
+            
+    
+            var popup_9dc889fa3e3e42eb8130333b14f1fce5 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_c00411b2818a417d982c5059d46cf00d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9Ib3NwaXRhbF9kZV9Nb3N0b2xlcy0yMDIwLnBuZyIgd2lkdGg9IjM1MiIgaGVpZ2h0PSIzMTAiIGFsdD1Ib3NwaXRhbCBkZSBNw7NzdG9sZXM+" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_9dc889fa3e3e42eb8130333b14f1fce5.setContent(i_frame_c00411b2818a417d982c5059d46cf00d);
+            
+
+            marker_7d2dbceedbe94b6cbf2bb1ef63fc96e5.bindPopup(popup_9dc889fa3e3e42eb8130333b14f1fce5)
+            ;
+
+            
+        
+    
+        marker_7d2dbceedbe94b6cbf2bb1ef63fc96e5.bindTooltip(
+            `<div>`
+            + `Hospital de Móstoles (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0f7d42038a5c48f7824337980a8647a9 = L.marker(
+            [40.327153499999994, -3.767471],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_767cdff86889432880a5e7df0fa24a7c = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0f7d42038a5c48f7824337980a8647a9.setIcon(icon_767cdff86889432880a5e7df0fa24a7c);
+            
+    
+            var popup_14c7aef2f73d4a6c9cfc5684e44a1d2a = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_52e6e3456e234b7090e89c0222d1ec7f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9JbnN0aXR1dG9fUHNpcXVpYXRyaWNvX0pvc2VfR2VybWFpbi0yMDIwLnBuZyIgd2lkdGg9IjM1MiIgaGVpZ2h0PSIzMTAiIGFsdD1JbnN0aXR1dG8gUHNpcXVpw6F0cmljbyBKb3PDqSBHZXJtYWluPg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_14c7aef2f73d4a6c9cfc5684e44a1d2a.setContent(i_frame_52e6e3456e234b7090e89c0222d1ec7f);
+            
+
+            marker_0f7d42038a5c48f7824337980a8647a9.bindPopup(popup_14c7aef2f73d4a6c9cfc5684e44a1d2a)
+            ;
+
+            
+        
+    
+        marker_0f7d42038a5c48f7824337980a8647a9.bindTooltip(
+            `<div>`
+            + `Instituto Psiquiátrico José Germain (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0b67c48577494ff1a3bebc3861972724 = L.marker(
+            [40.38981769999999, -3.6911273],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_0dd93c59b8eb45688829513335715cb1 = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0b67c48577494ff1a3bebc3861972724.setIcon(icon_0dd93c59b8eb45688829513335715cb1);
+            
+    
+            var popup_6ab3c977a9ff4b6e96188009e28bb774 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_ab6c14167a154d70bf12a5595783e2ad = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9TVU1NQV8xMTItMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9U1VNTUEgMTEyPg==" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_6ab3c977a9ff4b6e96188009e28bb774.setContent(i_frame_ab6c14167a154d70bf12a5595783e2ad);
+            
+
+            marker_0b67c48577494ff1a3bebc3861972724.bindPopup(popup_6ab3c977a9ff4b6e96188009e28bb774)
+            ;
+
+            
+        
+    
+        marker_0b67c48577494ff1a3bebc3861972724.bindTooltip(
+            `<div>`
+            + `SUMMA 112 (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b1ad2026c475447eb54dfbbeb1ea27c1 = L.marker(
+            [40.4507961, -3.6941193],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(marker_cluster_0bb376b5fe7646cbbf14d6e0e0f44fe9);
+        
+    
+
+                var icon_96393eb79d7d4476b9fab9856bc6962f = L.AwesomeMarkers.icon({
+                    icon: 'plus-square',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b1ad2026c475447eb54dfbbeb1ea27c1.setIcon(icon_96393eb79d7d4476b9fab9856bc6962f);
+            
+    
+            var popup_4bc31898b5264ecc9a921d20ace824b4 = L.popup({maxWidth: '370'
+            
+            });
+
+            
+                var i_frame_69a9b55667cb44cf81c58e7fac66a29d = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAgPGltZyBzcmM9Imh0dHBzOi8vYnJpYW5kYXlhLmdpdGh1Yi5pby9jb250cmF0b3NfbWVub3Jlc19DTS9kb2NzL2dyYXBocy9TZXJ2aWNpb19NYWRyaWxlbm9fZGVfU2FsdWQtMjAyMC5wbmciIHdpZHRoPSIzNTIiIGhlaWdodD0iMzEwIiBhbHQ9U2VydmljaW8gTWFkcmlsZcOxbyBkZSBTYWx1ZD4=" width="370" style="border:none !important;" height="328"></iframe>`)[0];
+                popup_4bc31898b5264ecc9a921d20ace824b4.setContent(i_frame_69a9b55667cb44cf81c58e7fac66a29d);
+            
+
+            marker_b1ad2026c475447eb54dfbbeb1ea27c1.bindPopup(popup_4bc31898b5264ecc9a921d20ace824b4)
+            ;
+
+            
+        
+    
+        marker_b1ad2026c475447eb54dfbbeb1ea27c1.bindTooltip(
+            `<div>`
+            + `Servicio Madrileño de Salud (haz clic)` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
